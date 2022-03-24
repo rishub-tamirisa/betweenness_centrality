@@ -1,0 +1,24 @@
+## Final Project Proposal (Due March 25th)
+Even if you choose to use one or more of the suggested example project goals, as a team you are responsible for submitting a project proposal of no more than two pages that contains the following information:
+
+**Leading Question** Your final project should have a clear conclusion or target goal – given a dataset and a code base that implements some graph algorithms, what can you learn from the dataset? Are you hoping to solve a specific problem? Are you hoping to produce a general search tool? You should clearly describe how your team will use your dataset and algorithms to answer your leading question. Be thorough in your description – this is the foundation of your project and if your mentor cannot follow your logic, you will not be able to proceed further on the project. NOTE: Not every algorithm implemented in the project must directly answer this question, but you must answer the question using the algorithms you have selected.
+
+**Dataset Acquisition and Processing** Your final project must use at least one publicly accessible dataset and your proposal must clearly describe what dataset you have chosen to use. This includes succinctly describing:
+
+**Data format.** In roughly a paragraph, you should describe to the best of your ability the specifics of your input dataset. At minimum this includes: What is the source of the dataset and what is the input format of said dataset? How big is the dataset? Do you plan to use all of the data or only a subset? If so, how will you define the subset?
+
+**Data Correction.** In a paragraph or two, you should describe how will you parse the input data and what checks are you doing to ensure the input data is error-free. At minimum this should dicuss how you will check for missing entries and how will you correct such instances when you find them. Depending on the dataset, it is also reasonable to check for values that are not physically possible or values which are statistical outliers. Note: These are just suggestions – you may have many other ideas for how to find and correct problems in your dataset
+
+**Data Storage.** In a paragraph or two, you should describe what data structure are you using to store the data within your code. If you need any auxilary data structures or preprocessed tables, you should also discuss them here. As part of this proposal you must include an estimate of the total storage costs for your dataset in Big O notation.
+
+**Graph Algorithms** In no more than a few paragraphs, describe what algorithms you will use to answer the leading question. You should spend some time considering what algorithms you might try and, for all major functions you plan to use, include the following details in your proposal:
+
+Function Inputs What are the expected inputs for your algorithm? Do you have to do anything to convert your stored dataset into a usable input for the algorithm described? (Ex: A graph algorithm would require making the input into a graph.) For the more complex algorithms, be sure to include as part of the input any additional information you might need. For example, A* search requires a heuristic. If you choose to do A*, what are some possible heuristics you might use?
+
+Function Outputs What is the expected output for your algorithm? How will you store, print, or otherwise visualize the outcome?
+
+Function Efficiency Your algorithm likely has a theoretically optimal Big O that you can find online. But most algorithms also have multiple implementations and there is no guarantee that your implementation of this algorithm is optimal. As part of this proposal you must include an estimate or target goal on the Big O efficiency of your algorithm in both time and memory.
+
+NOTE: To be considered a valid final project, your team must implement at least two graph data algorithms as well as a graph traversal from the list of example goals or you must propose an algorithm or set of graph algorithms that represent an equivalent amount of coding development.
+
+Timeline As a team, identify a list of tasks such as data acquisition, data processing, completion of each individual algorithm, production of final deliverables, etc… and write a proposed timeline for the completion of these tasks. You are not required to adhere strictly to this timeline but it should represent a reasonable set of benchmarks to strive for. For example, stating that you will finish all graph algorithms over the span of a single week is not reasonable. At least one proposed task must be completed before the mid-project checkin – part of the mid-project grade will be based on whether or not this target goal was met.
