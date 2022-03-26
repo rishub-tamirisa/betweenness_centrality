@@ -27,27 +27,27 @@ We will also implement a BFS traversal for our graph data structure. BFS takes t
 ## Timeline
 
 Week 1: Create template classes
-Breaking down of our project codebase into classes 
-Creation of main classes
-Skeleton functions
+- Breaking down of our project codebase into classes 
+- Creation of main classes
+- Skeleton functions
 
 Week 2: Data storage and access algorithms
-Storage access between classes
-Creation of storage classes
-Correction/Checking of our data structures of holding and accessing our data
+- Storage access between classes
+- Creation of storage classes
+- Correction/Checking of our data structures of holding and accessing our data (Test Cases for Graph DS)
 
 Week 3: B-C algorithm creation 
-Creation of a B-C algorithm that would take in the context of our data unweighted graph data structure of Amazon Products
+- Creation of a B-C algorithm that would take in the context of our data unweighted graph data structure of Amazon Products
 
 Week 4: Implementation of B-C algorithm with data access
-Connecting the B-C algorithm with our storage classes
-Testing the output of the B-C algorithm
-Week 5: Creation of graphical representation method and algorithm
+- Connecting the B-C algorithm with our storage classes
+- Testing the output of the B-C algorithm
 
-Creation of graphic output/representation of graph
-Method to iterate through dataset and output BC algorithm details
-Creation of justification of placement of data structures onto the graphical representation
+Week 5: Creation of graphical representation method and algorithm
+- Creation of graphic output/representation of graph
+- Method to iterate through dataset and output BC algorithm details
+- Creation of justification of placement of data structures onto the graphical representation
 
 Week 6: Test and Finalize project 
-Creation of user interface/input for product input
-Testing and debugging of any part of any of previous work
+- Creation of user interface/input for product input
+- Testing and debugging of any part of any of previous work
