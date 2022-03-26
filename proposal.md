@@ -1,24 +1,53 @@
-## Final Project Proposal (Due March 25th)
-Even if you choose to use one or more of the suggested example project goals, as a team you are responsible for submitting a project proposal of no more than two pages that contains the following information:
+# Final Project Proposal
+## Leading Question:
+### How frequently are Amazon products purchased with other products?
 
-**Leading Question** Your final project should have a clear conclusion or target goal – given a dataset and a code base that implements some graph algorithms, what can you learn from the dataset? Are you hoping to solve a specific problem? Are you hoping to produce a general search tool? You should clearly describe how your team will use your dataset and algorithms to answer your leading question. Be thorough in your description – this is the foundation of your project and if your mentor cannot follow your logic, you will not be able to proceed further on the project. NOTE: Not every algorithm implemented in the project must directly answer this question, but you must answer the question using the algorithms you have selected.
+## Dataset Acquisition and Processing:
 
-**Dataset Acquisition and Processing** Your final project must use at least one publicly accessible dataset and your proposal must clearly describe what dataset you have chosen to use. This includes succinctly describing:
+**Data Format:**
+We are planning to get the Amazon product co-purchasing network and ground-truth communities dataset from SNAP. We are getting 2 sets of data, one with the nodes and the neighboring nodes in one set and the other set contains the attributes of each of the nodes (category, review, title), but we will be mostly using the title/category from this dataset. The input format of the first dataset is the node followed by the neighbor of that node. It is given like # FromNodeId	  #ToNodeId. The input format of the second dataset is Id, ASIN, title, group, salesrank, similar, categories, reviews (time, user id, rating, total number of votes on the review, total number of helpfulness votes(how many people found the review to be helpful). For the first dataset, we will be using all of the information given while we plan to use a subset for the second dataset because the title and group is what we need the most out of the dataset.
 
-**Data format.** In roughly a paragraph, you should describe to the best of your ability the specifics of your input dataset. At minimum this includes: What is the source of the dataset and what is the input format of said dataset? How big is the dataset? Do you plan to use all of the data or only a subset? If so, how will you define the subset?
+**Data Correction:**
+We will parse our input data by just reading the data and filtering out the values we don’t need, like the sales rank, product categorization, and product reviews. The check that we will do to ensure the input data is error-free would be to make sure none of the neighbors are node ID’s that don’t exist. 
 
-**Data Correction.** In a paragraph or two, you should describe how will you parse the input data and what checks are you doing to ensure the input data is error-free. At minimum this should dicuss how you will check for missing entries and how will you correct such instances when you find them. Depending on the dataset, it is also reasonable to check for values that are not physically possible or values which are statistical outliers. Note: These are just suggestions – you may have many other ideas for how to find and correct problems in your dataset
+**Data Storage:**
+We plan on representing the graph with an O(V2) adjacency matrix storage system in order to completely represent the graph with direct pointer accessibility to every node/edge. We planned on this over an adjacency list as to save time in accessing every node over the course of implementing our algorithms. We also would store the metadata list of information about the products in a hash table in addition to the adjacency matrix. This would be O(V).
 
-**Data Storage.** In a paragraph or two, you should describe what data structure are you using to store the data within your code. If you need any auxilary data structures or preprocessed tables, you should also discuss them here. As part of this proposal you must include an estimate of the total storage costs for your dataset in Big O notation.
+## Graph Algorithms
 
-**Graph Algorithms** In no more than a few paragraphs, describe what algorithms you will use to answer the leading question. You should spend some time considering what algorithms you might try and, for all major functions you plan to use, include the following details in your proposal:
+**Graphic Output of the Graph:**
+We will use a force-directed graphic output algorithm to determine the shortest distance between nodes for products. The expected input for this algorithm are the nodes and edges of the graph. The output of this algorithm will be an image of the graph that best minimizes the spacing between nodes given that the edges are all weighted as 1. We may consider weighting the edges in our representation by the number of neighbors for a non-equidistant representation. Our target time complexity is O(N^2) and the space complexity is O(V^2)
+ 
+**Betweenness Centrality:**
+We will be using Brandes’ Algorithm for calculating betweenness centrality for undirected and unweighted graphs. The expected input for this algorithm is the graph itself. As mentioned earlier in the proposal, we will convert the input data to an adjacency matrix so that it can be used with our algorithm. The output of this algorithm will be the centrality values for nodes in the graph. Brande’s Algorithm would give us almost a guaranteed O(V*E) due to the nature of the algorithm working on the unweighted nature of the graph. Our target time efficiency is O(V*E) and space complexity is O(V^2).
 
-Function Inputs What are the expected inputs for your algorithm? Do you have to do anything to convert your stored dataset into a usable input for the algorithm described? (Ex: A graph algorithm would require making the input into a graph.) For the more complex algorithms, be sure to include as part of the input any additional information you might need. For example, A* search requires a heuristic. If you choose to do A*, what are some possible heuristics you might use?
+**BFS Traversal:**
+We will also implement a BFS traversal for our graph data structure. BFS takes the adjacency matrix representation of the graph and a source node as inputs. The output of our BFS algorithm will be a printed output of the nodes in order of the traversal. The theoretical / worst-case time complexity for our algorithm is O(V+E), where V is the number of vertices and E is the number of edges in the graph. The worst case space complexity is O(V^2) due to storing an adjacency matrix. Our targets for time / space complexity are O(V+E) and O(V^2), respectively.
+ 
+## Timeline
 
-Function Outputs What is the expected output for your algorithm? How will you store, print, or otherwise visualize the outcome?
+Week 1: Create template classes
+Breaking down of our project codebase into classes 
+Creation of main classes
+Skeleton functions
 
-Function Efficiency Your algorithm likely has a theoretically optimal Big O that you can find online. But most algorithms also have multiple implementations and there is no guarantee that your implementation of this algorithm is optimal. As part of this proposal you must include an estimate or target goal on the Big O efficiency of your algorithm in both time and memory.
+Week 2: Data storage and access algorithms
+Storage access between classes
+Creation of storage classes
+Correction/Checking of our data structures of holding and accessing our data
 
-NOTE: To be considered a valid final project, your team must implement at least two graph data algorithms as well as a graph traversal from the list of example goals or you must propose an algorithm or set of graph algorithms that represent an equivalent amount of coding development.
+Week 3: B-C algorithm creation 
+Creation of a B-C algorithm that would take in the context of our data unweighted graph data structure of Amazon Products
 
-Timeline As a team, identify a list of tasks such as data acquisition, data processing, completion of each individual algorithm, production of final deliverables, etc… and write a proposed timeline for the completion of these tasks. You are not required to adhere strictly to this timeline but it should represent a reasonable set of benchmarks to strive for. For example, stating that you will finish all graph algorithms over the span of a single week is not reasonable. At least one proposed task must be completed before the mid-project checkin – part of the mid-project grade will be based on whether or not this target goal was met.
+Week 4: Implementation of B-C algorithm with data access
+Connecting the B-C algorithm with our storage classes
+Testing the output of the B-C algorithm
+Week 5: Creation of graphical representation method and algorithm
+
+Creation of graphic output/representation of graph
+Method to iterate through dataset and output BC algorithm details
+Creation of justification of placement of data structures onto the graphical representation
+
+Week 6: Test and Finalize project 
+Creation of user interface/input for product input
+Testing and debugging of any part of any of previous work
