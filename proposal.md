@@ -1,6 +1,11 @@
 # Final Project Proposal
 ## Leading Question:
-### How frequently are Amazon products purchased with other products?
+### What Amazon products are "critical" in how customers will purchase different products?
+We would first define a product as being critical if it commonly links two products to be purchased together. If a customer is shopping on Amazon, they'd start with purchasing product A, and potentially buy related products, eventually ending at product B. Between products A and B, there might have a particular critical product that was important in the customer's decision to continue buying related products. For multiple products A and B, we want to determine the node(s) that most significantly appear in the path between customers' purchasing two products.
+
+To answer this question, we will use betweenness centrality on a dataset for Amazon products in which edges between products are defined by being commonly purchased together. Betweenness centrality will provide a measurement for each node on the number of shortest paths between two other product nodes that contain the node. Since centrality determines which nodes are most critical in connecting different nodes in a graph (i.e. to get from one node to another, this node will probably have to be passed through), we can interpret high centrality for our dataset to describe products that are important in guiding customers to purchase different products.
+
+A successful solution will be able to use this dataset to determine which products have the highest centralities. This would answer our leading question in which the products that have the most shortest paths going through them can be interpreted as "critical" products for customers to purchase that would guide them from purchasing one product to another product while shopping on Amazon.
 
 ## Dataset Acquisition and Processing:
 
