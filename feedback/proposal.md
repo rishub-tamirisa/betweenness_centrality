@@ -1,3 +1,9 @@
+### Regrade
+
+Competent (90%)
+
+-10% due to resubmission
+
 ### Grade
 
 Not Yet Competent (70%)
