@@ -2,13 +2,16 @@
 #include <vector>
 #include <unordered_map>
 #include <list>
+
+
 class Graph {
     public:
+        class Edge; // forward declaration
+
         class Vertex {
             public:
                 int degree;
                 std::list<Edge*> list;
-                Vertex() {}
         };
 
         class Edge {
