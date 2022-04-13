@@ -1,6 +1,6 @@
 #include "NodeReader.h"
 
-NodeReader::NodeReader(string& filename) {
+NodeReader::NodeReader(std::string& filename) {
 
 }
         
@@ -8,6 +8,10 @@ void NodeReader::readInEdgeList(Graph& graph) {
 
 }
 
-void NodeReader::readInLabels(string& filename) {
+void NodeReader::readInLabels(std::string& filename) {
 
+}
+
+std::string  NodeReader::getLabel(int NodeID) {
+    return labels_hash[NodeID];
 }

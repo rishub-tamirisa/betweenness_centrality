@@ -3,16 +3,23 @@
 #include <map>
 #include "graph.h"
 #include <unordered_map>
-using namespace std;
+#include <string>
 
+/**
+* Class to read in the NodeID file format provided with the SNAP dataset
+* - supports reading the full Edgelist into our Graph ADT
+* - stores the labels for each nodeID that can be used to properly interpret the Graph
+*/
 class NodeReader {
     public:
-        NodeReader(string& filename);
+        NodeReader(std::string & filename);
         
         void readInEdgeList(Graph& graph);
 
-        void readInLabels(string& filename);
+        void readInLabels(std::string& filename);
+
+        std::string getLabel(int NodeID);
     private:
-        unordered_map<int, string> labels_hash;
-        string src_file;
+        std::unordered_map<int, std::string> labels_hash;
+        std::string src_file;
 };
