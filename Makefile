@@ -1,21 +1,31 @@
-# Executable names:
-EXE = graph
-TEST = test
+EXENAME = graph
+OBJS = main.o graph.o
 
-# Add all object files needed for compiling:
-EXE_OBJ = main.o
-OBJS = graph.o main.o
+CXX = clang++
+CXXFLAGS = $(CS225) -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
+LD = clang++
+LDFLAGS = -std=c++1y -stdlib=libc++ -lc++abi -lm
 
-# Generated files
-CLEAN_RM = out.png
+all : $(EXENAME)
 
-# Use the cs225 makefile template:
-include cs225/make/cs225.mk
+$(EXENAME) : $(OBJS)
+	$(LD) $(OBJS) $(LDFLAGS) -o $(EXENAME)
 
-# MP-specific target
-TMP_OBJ := $(OBJS)
-OBJS = $(filter-out $(EXE_OBJ), $(TMP_OBJ))
-# OBJS += testimage.o
+main.o : main.cpp graph.h
+	$(CXX) $(CXXFLAGS) main.cpp
 
-testimage: $(patsubst %.o, $(OBJS_DIR)/%.o, $(OBJS))
-	$(LD) $^ $(LDFLAGS) -o $@
+graph.o : graph.cpp graph.h
+	$(CXX) $(CXXFLAGS) graph.cpp
+
+test: catchmain.o tests.o graph.o
+	$(LD) catchmain.o tests.o  graph.o $(LDFLAGS) -o test
+
+catchmain.o : catchmain.cpp catch.hpp
+	$(CXX) $(CXXFLAGS) catchmain.cpp
+
+tests.o : tests.cpp catch.hpp graph.cpp graph.h 
+	$(CXX) $(CXXFLAGS) tests.cpp
+
+clean :
+	-rm -f *.o $(EXENAME) test
+
