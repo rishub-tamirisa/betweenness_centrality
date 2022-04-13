@@ -1,3 +1,5 @@
 #include "graph.h"
 
-void test();
+void Graph::test() {
+    
+}

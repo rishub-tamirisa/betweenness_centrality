@@ -5,5 +5,5 @@ class Graph {
     public:
         void test();
     private:
-        ine test;
-}
+        int t;
+};

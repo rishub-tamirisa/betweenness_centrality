@@ -11,19 +11,19 @@ all : $(EXENAME)
 $(EXENAME) : $(OBJS)
 	$(LD) $(OBJS) $(LDFLAGS) -o $(EXENAME)
 
-main.o : main.cpp graph.h
+main.o : main.cpp graph.h NodeReader.h 
 	$(CXX) $(CXXFLAGS) main.cpp
 
-graph.o : graph.cpp graph.h
-	$(CXX) $(CXXFLAGS) graph.cpp
+graph.o : graph.cpp graph.h NodeReader.h 
+	$(CXX) $(CXXFLAGS) graph.cpp NodeReader.cpp 
 
-test: catchmain.o tests.o graph.o
+test: catchmain.o tests.o graph.o NodeReader.o 
 	$(LD) catchmain.o tests.o  graph.o $(LDFLAGS) -o test
 
 catchmain.o : catchmain.cpp catch.hpp
 	$(CXX) $(CXXFLAGS) catchmain.cpp
 
-tests.o : tests.cpp catch.hpp graph.cpp graph.h 
+tests.o : tests.cpp catch.hpp graph.cpp graph.h NodeReader.h 
 	$(CXX) $(CXXFLAGS) tests.cpp
 
 clean :
