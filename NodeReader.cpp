@@ -2,7 +2,7 @@
 #include <iostream>
 
 NodeReader::NodeReader(std::string& filename) {
-
+        src_file = filename;
 }
         
 void NodeReader::readInEdgeList(Graph& graph) {
