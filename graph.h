@@ -1,13 +1,14 @@
 #pragma once
 #include <vector>
 #include <unordered_map>
+#include <list>
 class Graph {
     public:
         class Vertex {
             public:
-                int key;
                 int degree;
-                Vertex(int k) : key(k) {}
+                std::list<Edge*>;
+                Vertex() {}
         };
 
         class Edge {
@@ -22,10 +23,11 @@ class Graph {
 
         void insertEdge(Vertex* v1, Vertex* v2, int w);
 
-        std::vector<Edge> incidentEdges(Vertex* v);
+        std::list<Edge*> incidentEdges(Vertex* v);
 
         bool areAdjacent(Vertex* v1, Vertex* v2);
 
     private:
-        std::unordered_map<Vertex*, Edge> adj_list;
+        std::unordered_map<int, Vertex*> adj_list;
+
 };
