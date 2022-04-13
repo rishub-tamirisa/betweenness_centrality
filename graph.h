@@ -7,7 +7,7 @@ class Graph {
         class Vertex {
             public:
                 int degree;
-                std::list<Edge*>;
+                std::list<Edge*> list;
                 Vertex() {}
         };
 
