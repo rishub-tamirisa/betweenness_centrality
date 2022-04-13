@@ -1,11 +1,12 @@
 #pragma once
 #include <vector>
-
+#include <unordered_map>
 class Graph {
     public:
         class Vertex {
             public:
                 int key;
+                int degree;
                 Vertex(int k) : key(k) {}
         };
 
@@ -26,5 +27,5 @@ class Graph {
         bool areAdjacent(Vertex* v1, Vertex* v2);
 
     private:
-        int t;
+        std::unordered_map<Vertex*, Edge> adj_list;
 };
