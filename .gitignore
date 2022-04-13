@@ -32,4 +32,5 @@
 *.app
 
 # Txt Data Files
-*.txt
+com-amazon.ungraph.txt
+com-amazon.top5000.cmty.txt
