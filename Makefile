@@ -1,5 +1,5 @@
 EXENAME = graph
-OBJS = main.o graph.o
+OBJS = main.o graph.o NodeReader.o
 
 CXX = clang++
 CXXFLAGS = $(CS225) -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
@@ -15,7 +15,10 @@ main.o : main.cpp graph.h NodeReader.h
 	$(CXX) $(CXXFLAGS) main.cpp
 
 graph.o : graph.cpp graph.h NodeReader.h 
-	$(CXX) $(CXXFLAGS) graph.cpp NodeReader.cpp 
+	$(CXX) $(CXXFLAGS) graph.cpp
+
+NodeReader.o : NodeReader.cpp graph.h NodeReader.h
+	$(CXX) $(CXXFLAGS) NodeReader.cpp  
 
 test: catchmain.o tests.o graph.o NodeReader.o 
 	$(LD) catchmain.o tests.o  graph.o $(LDFLAGS) -o test
