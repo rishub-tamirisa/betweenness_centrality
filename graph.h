@@ -29,5 +29,6 @@ class Graph {
 
     private:
         std::unordered_map<int, Vertex*> adj_list;
+        std::vector<Edge*> edge_list;
 
 };
