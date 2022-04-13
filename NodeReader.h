@@ -13,5 +13,6 @@ class NodeReader {
 
         void readInLabels(string& filename);
     private:
-        unordered_map<int, string> hash;
+        unordered_map<int, string> labels_hash;
+        string src_file;
 };
