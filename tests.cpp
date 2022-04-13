@@ -4,3 +4,6 @@
 #include <iostream>
 #include <vector>
 
+TEST_CASE() {
+   REQUIRE(true);
+}
