@@ -1,6 +1,5 @@
 /**
  * @file main.cpp
- * A simple C++ program for building and searching an FM Index
  */
 
 #include <string>
