@@ -30,6 +30,12 @@ class Graph {
 
         bool areAdjacent(Vertex* v1, Vertex* v2);
 
+        //BFS
+
+        //BRANDES
+
+        //FORCE-DIRECTED DRAWING
+
     private:
         std::unordered_map<int, Vertex*> adj_list;
         std::vector<Edge*> edge_list;
