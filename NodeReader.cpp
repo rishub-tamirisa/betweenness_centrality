@@ -1,4 +1,5 @@
 #include "NodeReader.h"
+#include <iostream>
 
 NodeReader::NodeReader(std::string& filename) {
 
