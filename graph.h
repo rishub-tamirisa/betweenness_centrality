@@ -14,7 +14,7 @@ class Graph {
                 int weight;
                 Vertex* v1;
                 Vertex* v2;
-                Edge(Vertex* v1, Vertex* v2, int w) : weight(w) {}
+                Edge(Vertex* _v1, Vertex* _v2, int w) : weight(w), v1(_v1), v2(_v2) {}
         };
 
         void insertVertex(int key);
