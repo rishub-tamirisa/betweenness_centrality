@@ -2,7 +2,7 @@
 #include <vector>
 #include <unordered_map>
 #include <list>
-
+#include <stdexcept>
 
 class Graph {
     public:
@@ -11,7 +11,7 @@ class Graph {
         class Vertex {
             public:
                 int degree;
-                std::list<Edge*> list;
+                std::list<Edge*> edges;
         };
 
         class Edge {
@@ -30,11 +30,24 @@ class Graph {
 
         bool areAdjacent(Vertex* v1, Vertex* v2);
 
+        
+
         //BFS
 
         //BRANDES
 
         //FORCE-DIRECTED DRAWING
+
+        ~Graph();
+
+        //access vertices
+        Vertex* operator[](int key) { 
+            return adj_list.at(key); 
+        }
+
+        std::unordered_map<int, Vertex*>& getAdjList() { return adj_list; }
+
+        std::vector<Edge*>& getEdgeList() { return edge_list; }
 
     private:
         std::unordered_map<int, Vertex*> adj_list;
