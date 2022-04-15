@@ -1,12 +1,14 @@
 #include "graph.h"
 #include <algorithm>
 
+//O(1)
 void Graph::insertVertex(int key) {
     if (adj_list.find(key) == adj_list.end()) {
         adj_list[key] = new Vertex();
     }
 }
 
+//O(max(deg(v1), deg(v2))) ~ O(1)
 void Graph::insertEdge(int k1, int k2, int w) {
     if (adj_list.find(k1) != adj_list.end() && adj_list.find(k2) != adj_list.end()) {
         Vertex* v = adj_list[k1];
@@ -30,10 +32,12 @@ void Graph::insertEdge(int k1, int k2, int w) {
     }
 }
 
+//O(1)
 std::list<Graph::Edge*> Graph::incidentEdges(int key) {
     return adj_list[key]->edges;
 }
 
+//O(max(deg(v1), deg(v2))) ~ O(1)
 bool Graph::areAdjacent(int k1, int k2) {
     if (adj_list.find(k1) != adj_list.end() && adj_list.find(k2) != adj_list.end()) {
         Vertex* v1 = adj_list[k1];
@@ -51,6 +55,7 @@ bool Graph::areAdjacent(int k1, int k2) {
     return false;
 }
 
+//O(V+E)
 Graph::~Graph() {
     for (Edge* edge : edge_list) {
         delete edge;
