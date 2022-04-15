@@ -12,11 +12,11 @@
 */
 class NodeReader {
     public:
-        NodeReader(std::string & filename);
+        NodeReader(std::string filename);
         
         void readInEdgeList(Graph& graph);
 
-        void readInLabels(std::string& filename);
+        void readInLabels(std::string filename);
 
         std::string getLabel(int NodeID);
     private:
