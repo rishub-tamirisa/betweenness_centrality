@@ -45,6 +45,7 @@ class Graph {
             return adj_list.at(key); 
         }
 
+        //testing purposes
         std::unordered_map<int, Vertex*>& getAdjList() { return adj_list; }
 
         std::vector<Edge*>& getEdgeList() { return edge_list; }
