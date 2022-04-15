@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <utility>
 
 NodeReader::NodeReader(std::string filename) {
         src_file = filename;
@@ -14,8 +13,6 @@ void NodeReader::readInEdgeList(Graph& graph) {
     std::stringstream sstream;
     std::string line;
     int FromNodeID, ToNodeID;
-    std::unordered_map<int, int> duplicate_vertex;
-    std::map<std::pair<int, int>, int> duplicate_edge;
 
     if (file.is_open()) {
         while (getline(file, line)) {
