@@ -24,13 +24,15 @@ class Graph {
 
         void insertVertex(int key);
 
-        void insertEdge(Vertex* v1, Vertex* v2, int w);
+        void insertEdge(int k1, int k2, int w);
 
-        std::list<Edge*> incidentEdges(Vertex* v);
+        std::list<Edge*> incidentEdges(int key);
 
-        bool areAdjacent(Vertex* v1, Vertex* v2);
+        bool areAdjacent(int k1, int k2);
 
-        
+
+        //access vertices
+        Vertex* operator[](int key) { return adj_list.at(key); }
 
         //BFS
 
@@ -39,12 +41,7 @@ class Graph {
         //FORCE-DIRECTED DRAWING
 
         ~Graph();
-
-        //access vertices
-        Vertex* operator[](int key) { 
-            return adj_list.at(key); 
-        }
-
+        
         //testing purposes
         std::unordered_map<int, Vertex*>& getAdjList() { return adj_list; }
 
