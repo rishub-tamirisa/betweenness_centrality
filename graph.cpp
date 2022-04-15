@@ -35,15 +35,17 @@ std::list<Graph::Edge*> Graph::incidentEdges(int key) {
 }
 
 bool Graph::areAdjacent(int k1, int k2) {
-    Vertex* v1 = adj_list[k1];
-    Vertex* v2 = adj_list[k2];
-    Vertex* v = v2;
-    if (v1->degree <= v2->degree) {
-        v = v1;
-    }
-    for(auto edge : v->edges) {
-        if ((edge->v1 == v1 && edge->v2 == v2) || (edge->v1 == v2 && edge->v2 == v1)) {
-            return true;
+    if (adj_list.find(k1) != adj_list.end() && adj_list.find(k2) != adj_list.end()) {
+        Vertex* v1 = adj_list[k1];
+        Vertex* v2 = adj_list[k2];
+        Vertex* v = v2;
+        if (v1->degree <= v2->degree) {
+            v = v1;
+        }
+        for(auto edge : v->edges) {
+            if ((edge->v1 == v1 && edge->v2 == v2) || (edge->v1 == v2 && edge->v2 == v1)) {
+                return true;
+            }
         }
     }
     return false;
