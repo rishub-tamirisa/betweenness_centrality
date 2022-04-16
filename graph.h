@@ -13,7 +13,7 @@ class Graph {
                 int ID;
                 int degree;
                 std::list<Edge*> edges;
-                Vertex(int id) : ID(id) {}
+                Vertex(int id) : ID(id), degree(0) {}
         };
 
         class Edge {
