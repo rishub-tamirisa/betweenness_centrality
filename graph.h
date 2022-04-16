@@ -10,8 +10,10 @@ class Graph {
 
         class Vertex {
             public:
+                int ID;
                 int degree;
                 std::list<Edge*> edges;
+                Vertex(int id) : ID(id) {}
         };
 
         class Edge {
@@ -35,6 +37,7 @@ class Graph {
         Vertex* operator[](int key) { return adj_list.at(key); }
 
         //BFS
+        std::vector<int> BFS(int root, int target);
 
         //BRANDES
 
