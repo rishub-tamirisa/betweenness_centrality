@@ -1,10 +1,11 @@
 #include "graph.h"
 #include <algorithm>
-
+#include <queue>
+#include <iostream>
 //O(1)
 void Graph::insertVertex(int key) {
     if (adj_list.find(key) == adj_list.end()) {
-        adj_list[key] = new Vertex();
+        adj_list[key] = new Vertex(key);
     }
 }
 
@@ -54,6 +55,35 @@ bool Graph::areAdjacent(int k1, int k2) {
     }
     return false;
 }
+
+std::vector<int> Graph::BFS(int root, int target) {
+    std::queue<int> q;
+    std::unordered_map<int, int> path;
+    q.push(root);
+    while (!q.empty()) {
+        int front = q.front();
+        q.pop();
+        if (front == target) {
+            break;
+        }
+        for (auto edge : adj_list[front]->edges) {
+            int neighbor = edge->v1->ID == front ? edge->v2->ID : edge->v1->ID;
+            if (path.find(neighbor) == path.end()) {
+                q.push(neighbor);
+                path[neighbor] = front;
+            } 
+        }
+    }
+    std::vector<int> result;
+    while (target != root) {
+        result.push_back(target);
+        target = path[target];
+    }
+    result.push_back(root);
+    std::reverse(result.begin(), result.end());
+    return result;
+}
+
 
 //O(V+E)
 Graph::~Graph() {
