@@ -6,6 +6,31 @@
 #include "graph.h"
 #include "NodeReader.h"
 
+bool match_vec(std::vector<int>& first, std::vector<int>& second) {
+   for (unsigned i = 0; i < first.size(); i++) {
+      if (i >= second.size() || first[i] != second[i]) {
+         // std::cout << first[i] << " " << second[i] << std::endl;
+         return false;
+      }
+   }
+   return true;
+}
+
+bool match_vec_multiple(std::vector<int>& first, std::vector<std::vector<int>>& list) {
+   for (unsigned i = 0; i < list.size(); i++) {
+      unsigned num = 0;
+      for (unsigned j = 0; j < first.size(); j++) {
+         if (i < list[i].size() && first[j] == list[i][j]) {
+            num++;
+         }
+      }
+      if (num == list[i].size()) {
+         return true;
+      }
+   }
+   return false;;
+}
+
 TEST_CASE("Graph Insert Nodes Correctly", "[graph][insert]") {
    Graph graph;
    graph.insertVertex(1);
@@ -115,4 +140,38 @@ TEST_CASE("NodeReader reads SNAP format", "[graph][reader]") {
    REQUIRE(graph.areAdjacent(18, 17));
 
    REQUIRE(graph.getEdgeList().size() == 29);
+}
+
+TEST_CASE("Graph BFS Correctness", "[graph][BFS]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/test.txt");
+   reader.readInEdgeList(graph);
+
+   SECTION("BFS Path 1") {
+      std::vector<int> ans_path = graph.BFS(5, 14);
+      std::vector<int> correct = {5, 6, 3, 8, 14};
+      REQUIRE(match_vec(ans_path, correct));
+   }
+   SECTION("BFS Path 2") {
+      std::vector<int> ans_path = graph.BFS(10, 16);
+      std::vector<std::vector<int>> choices = 
+      {  {10, 1, 2, 5, 17, 16}, 
+         {10, 1, 3, 8, 15, 16}, 
+         {10, 9, 14, 8, 15, 16}  };
+      REQUIRE(match_vec_multiple(ans_path, choices));
+   }
+   SECTION("BFS Path 3") {
+      std::vector<int> ans_path = graph.BFS(12, 17);
+      std::vector<int> correct = {12, 13, 18, 17};
+      REQUIRE(match_vec(ans_path, correct));
+   }
+
+}
+
+TEST_CASE("Reads In Full Data", "[full][read]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/com-amazon.ungraph.txt");
+   reader.readInEdgeList(graph);
+   REQUIRE(graph.areAdjacent(548096, 548099));
+   REQUIRE(!graph.areAdjacent(548096, 548406));
 }
