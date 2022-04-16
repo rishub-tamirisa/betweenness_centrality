@@ -168,7 +168,7 @@ TEST_CASE("Graph BFS Correctness", "[graph][BFS]") {
 
 }
 
-TEST_CASE("Reads In Full Data", "[full][read]") {
+TEST_CASE("Reads In Full Data", "[.][full]") {
    Graph graph;
    NodeReader reader("225FPDataset/com-amazon.ungraph.txt");
    reader.readInEdgeList(graph);
