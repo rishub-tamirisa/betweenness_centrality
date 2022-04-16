@@ -1,5 +1,6 @@
 # raunakb2-aparik31-pr16-rishubt2
-# Amazon Product Analysis by 309fc45c-e3d6-4289-9f69-65753fd6980c
+# Amazon Product Analysis 
+*** by 309fc45c-e3d6-4289-9f69-65753fd6980c ***
 
 ## Run Tests with `tests.cpp` <br>
 First make the `test` executable by running `make test` in the command line. <br>
