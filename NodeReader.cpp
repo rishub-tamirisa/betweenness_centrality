@@ -16,16 +16,17 @@ void NodeReader::readInEdgeList(Graph& graph) {
 
     if (file.is_open()) {
         while (getline(file, line)) {
-            sstream << line;
-            sstream >> FromNodeID >> ToNodeID;
-            sstream.clear();
-            graph.insertVertex(FromNodeID);
-            graph.insertVertex(ToNodeID);
-            graph.insertEdge(FromNodeID, ToNodeID, 1);
+            if (line[0] != '#') {
+                sstream << line;
+                sstream >> FromNodeID >> ToNodeID;
+                sstream.clear();
+                graph.insertVertex(FromNodeID);
+                graph.insertVertex(ToNodeID);
+                graph.insertEdge(FromNodeID, ToNodeID, 1);
 
-            // Use below code to automate REQUIRE statements for testcases
-            // std::cout << "REQUIRE(graph.areAdjacent(" << FromNodeID << ", " << ToNodeID << "));" << std::endl;
-
+                // Use below code to automate REQUIRE statements for testcases
+                // std::cout << "REQUIRE(graph.areAdjacent(" << FromNodeID << ", " << ToNodeID << "));" << std::endl;
+            }
         }
         file.close();
     }
