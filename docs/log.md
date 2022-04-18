@@ -25,3 +25,16 @@ None.
 
 ***What you plan to accomplish next week?*** <br>
 We plan to finish what we initially intended on completing during Week 1 & 2, as well as write the betweenness centrality algorithm on the templated graph data structure class.
+
+## Week 3
+***What goals you had set for the week and whether they were accomplished or not?*** <br>
+We set the goal of finishing our week 1 and 2 goals, as well as writing the betweenness centrality algorithm on our graph ADT class. We accomplished all of our goals except the implementation of betweenness centrality calculation.
+
+***What specific tasks each member of your team accomplished in the week?*** <br>
+We wrote an efficicent graph ADT class allowing for the insertion of vertices and edges into our graph, as well as the code for reading in our dataset. We also implemented our BFS traversal function, which returns the shortest path between two nodes in the graph, as our graph is unweighted and undirected. We also wrote test cases to ensure that this functionality works as expected and all of the test cases pass. 
+
+***What problems you encountered (if any) that prevented you from meeting your goals?*** <br>
+None. 
+
+***What you plan to accomplish next week?*** <br>
+We plan to finish our betweenness centrality algorithm and test cases, as well as start on our force-directed graph drawing functions. We also will add a few more helper functions in the graph ADT for removing nodes and edges.
