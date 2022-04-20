@@ -23,7 +23,12 @@ void NodeReader::readInEdgeList(Graph& graph) {
                 graph.insertVertex(FromNodeID);
                 graph.insertVertex(ToNodeID);
                 graph.insertEdge(FromNodeID, ToNodeID, 1);
-
+                if (ToNodeID > size) {
+                    size = ToNodeID;
+                }
+                if (FromNodeID > size) {
+                    size = FromNodeID;
+                }
                 // Use below code to automate REQUIRE statements for testcases
                 // std::cout << "REQUIRE(graph.areAdjacent(" << FromNodeID << ", " << ToNodeID << "));" << std::endl;
             }
