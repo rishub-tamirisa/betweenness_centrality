@@ -34,6 +34,7 @@
 # Txt Data Files
 com-amazon.ungraph.txt
 com-amazon.top5000.cmty.txt
+amazon-meta.txt
 
 #Dockerfile
 Dockerfile
