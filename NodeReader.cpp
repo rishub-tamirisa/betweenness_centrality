@@ -13,7 +13,6 @@ void NodeReader::readInEdgeList(Graph& graph) {
     std::stringstream sstream;
     std::string line;
     int FromNodeID, ToNodeID;
-
     if (file.is_open()) {
         while (getline(file, line)) {
             if (line[0] != '#') {
@@ -23,12 +22,6 @@ void NodeReader::readInEdgeList(Graph& graph) {
                 graph.insertVertex(FromNodeID);
                 graph.insertVertex(ToNodeID);
                 graph.insertEdge(FromNodeID, ToNodeID, 1);
-                if (ToNodeID > size) {
-                    size = ToNodeID;
-                }
-                if (FromNodeID > size) {
-                    size = FromNodeID;
-                }
                 // Use below code to automate REQUIRE statements for testcases
                 // std::cout << "REQUIRE(graph.areAdjacent(" << FromNodeID << ", " << ToNodeID << "));" << std::endl;
             }
@@ -42,27 +35,13 @@ void NodeReader::readInLabels(std::string filename) {
     file.open(filename);
     std::stringstream sstream;
     std::string line;
-    int NodeID;
-    std::string Title;
 
     if (file.is_open()) {
         while (getline(file, line)) {
-            sstream << line;
-            sstream >> NodeID;
-            sstream.clear();
-            getline(file, line);
-            sstream << line;
-            sstream >> Title;
-            sstream.clear();
-
-            Title = Title.substr(8, Title.size());
-            labels_hash[NodeID] = Title;
+            std::string Title;
+            getline(file, Title);
+            labels_hash[std::stoi(line.substr(6))] = Title.substr(9);
         }
         file.close();
     }
-
-}
-
-std::string  NodeReader::getLabel(int NodeID) {
-    return labels_hash[NodeID];
 }

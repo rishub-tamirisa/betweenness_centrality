@@ -16,9 +16,12 @@ class NodeReader {
 
         void readInLabels(std::string filename);
 
-        std::string getLabel(int NodeID);
+        std::string& operator[](int key) { return labels_hash.at(key); }
+
+        //testing purposes
+        std::unordered_map<int, std::string>& getLabels() { return labels_hash; }
+
     private:
         std::unordered_map<int, std::string> labels_hash;
         std::string src_file;
-        int size;
 };
