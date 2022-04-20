@@ -1,5 +1,5 @@
 try:
-    with open("amazon-meta.txt", "r") as file_input:
+    with open("amazon-meta.txt", "r") as file_input: #deleted file from git because of large size
         lines = file_input.readlines()
         with open("raunakb2-aparik31-pr16-rishubt2/225FPDataset/amazon-meta-reduced.txt", "w") as output: 
             for line in lines:
