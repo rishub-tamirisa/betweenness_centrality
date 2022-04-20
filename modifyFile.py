@@ -1,6 +1,6 @@
 discontinued = []
 ids = []
-ID_VALUES = []
+ID_VALUES = {}
 try:
     with open("amazon-meta.txt", "r") as file_input: #deleted file from git because of large size
         lines = file_input.readlines()
@@ -16,14 +16,27 @@ try:
                     output.write(line)
                 count = count + 1
         output.close()
-        for key in discontinued:
+    file_input.close()
+
+    for key in discontinued:
             temp = ""
             for letter in lines[key]:
                 if letter.isdigit():
                     temp = temp + letter
             ids.append(temp)
-    ID_VALUES = [int(number) for number in ids]
+    for i in range(len(ids)):
+        ID_VALUES[ids[i]] = None
+
+    with open("225FPDataset/com-amazon.ungraph.txt", "r") as file_input:
+        lines = file_input.readlines()
+        with open("225FPDataset/com-amazon-reduced.ungraph.txt", "w") as output:
+            for line in lines:
+                split = line.split('	')
+                if split[0] in ID_VALUES or split[1] in ID_VALUES:
+                    continue
+                output.write(line)
+        output.close()
+    file_input.close()
     print("Finished")
-    print(ID_VALUES)
 except:
     print("Error")
