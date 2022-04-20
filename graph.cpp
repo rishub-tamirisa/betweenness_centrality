@@ -4,6 +4,7 @@
 #include <iostream>
 //O(1)
 //test-Rishub
+//test merge branch
 void Graph::insertVertex(int key) {
     if (adj_list.find(key) == adj_list.end()) {
         adj_list[key] = new Vertex(key);
