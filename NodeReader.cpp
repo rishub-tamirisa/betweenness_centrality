@@ -38,7 +38,9 @@ void NodeReader::readInEdgeList(Graph& graph) {
 }
 
 void NodeReader::readInLabels(std::string filename) {
-
+    std::ifstream file;
+    file.open(filename);
+    
 }
 
 std::string  NodeReader::getLabel(int NodeID) {
