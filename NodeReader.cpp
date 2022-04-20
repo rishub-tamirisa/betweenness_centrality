@@ -40,7 +40,27 @@ void NodeReader::readInEdgeList(Graph& graph) {
 void NodeReader::readInLabels(std::string filename) {
     std::ifstream file;
     file.open(filename);
-    
+    std::stringstream sstream;
+    std::string line;
+    int NodeID;
+    std::string Title;
+
+    if (file.is_open()) {
+        while (getline(file, line)) {
+            sstream << line;
+            sstream >> NodeID;
+            sstream.clear();
+            getline(file, line);
+            sstream << line;
+            sstream >> Title;
+            sstream.clear();
+
+            Title = Title.substr(8, Title.size());
+            labels_hash[NodeID] = Title;
+        }
+        file.close();
+    }
+
 }
 
 std::string  NodeReader::getLabel(int NodeID) {
