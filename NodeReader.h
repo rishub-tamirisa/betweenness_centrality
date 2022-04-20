@@ -20,4 +20,5 @@ class NodeReader {
     private:
         std::unordered_map<int, std::string> labels_hash;
         std::string src_file;
+        int size;
 };
