@@ -11,3 +11,12 @@ Run the default test suite by executing `./test` in the command line. <br>
 ## Run `main`
 First make the `graph` executable by running `make` in the command line. <br>
 Run the contents of `main.cpp` by executing `./graph` in the command line
+
+### Workflow
+
+On local branch: <br>
+`git add` changes <br>
+`git commit -m` message <br>
+`git push` <br>
+Create and merge pull request via github.com UI
+
