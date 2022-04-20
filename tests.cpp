@@ -170,8 +170,20 @@ TEST_CASE("Graph BFS Correctness", "[graph][BFS]") {
 
 TEST_CASE("Reads In Full Data", "[.][full]") {
    Graph graph;
-   NodeReader reader("225FPDataset/com-amazon.ungraph.txt");
+   NodeReader reader("225FPDataset/com-amazon-reduced.ungraph.txt");
    reader.readInEdgeList(graph);
-   REQUIRE(graph.areAdjacent(548096, 548099));
-   REQUIRE(!graph.areAdjacent(548096, 548406));
+   reader.readInLabels("225FPDataset/amazon-meta-reduced.txt");
+
+   REQUIRE(graph.getAdjList().size() == 334863 - 11);
+
+   SECTION("Verify Data Cleaned") {
+      auto hash = graph.getAdjList();
+      for (auto &pair : hash ) {
+         REQUIRE(reader.getLabels().find(pair.first) != reader.getLabels().end());
+         REQUIRE(reader[pair.first] != "discontinued product");
+      }
+      REQUIRE(graph.areAdjacent(548096, 548099));
+      REQUIRE(!graph.areAdjacent(548096, 548406));
+   }
 }
+
