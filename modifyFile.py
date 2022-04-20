@@ -18,6 +18,7 @@ try:
         output.close()
     file_input.close()
 
+    TOTAL_REMOVED = {}
     for key in discontinued:
             temp = ""
             for letter in lines[key]:
@@ -31,9 +32,14 @@ try:
         with open("225FPDataset/com-amazon-reduced.ungraph.txt", "w") as output:
             for line in lines:
                 split = line.split()
-                if split[0] in ID_VALUES or split[1] in ID_VALUES:
+                if split[0] in ID_VALUES:
+                    TOTAL_REMOVED[split[0]] = None
+                    continue
+                if split[1] in ID_VALUES:
+                    TOTAL_REMOVED[split[1]] = None
                     continue
                 output.write(line)
+            print("Removed {} Discontinued Products".format(len(TOTAL_REMOVED)))
         output.close()
     file_input.close()
 except:
