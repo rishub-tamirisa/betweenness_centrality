@@ -51,3 +51,16 @@ None.
 
 ***What you plan to accomplish next week?*** <br>
 We plan to implement in code the BC algorithm and FDG algorithm on our `test.txt` dataset, and separately locate a subset of our dataset that is fully connected.
+
+## Week 5
+***What goals you had set for the week and whether they were accomplished or not?*** <br>
+We set the goal of completing the betweenness centrality algorithm and starting the force-directed graph drawing functions. We are still working towards completing them.
+
+***What specific tasks each member of your team accomplished in the week?*** <br>
+We discussed the implementation of the BC and FDG algorithms, and mainly talked about how we would implement these functions on a subset of our full graph. We started implementing some of the BC code locally and am currently writing tests.
+
+***What problems you encountered (if any) that prevented you from meeting your goals?*** <br>
+None.
+
+***What you plan to accomplish next week?*** <br>
+We will be done with the project in a few days.
