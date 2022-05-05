@@ -3,6 +3,14 @@
 #include <unordered_map>
 #include <list>
 #include <stdexcept>
+#include <map>
+#include <tuple>
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <stack>
 
 class Graph {
     public:
@@ -39,7 +47,15 @@ class Graph {
         //BFS
         std::vector<int> BFS(int root, int target);
 
+        void Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, 
+                        std::unordered_map<int, int>& sigma, std::stack<int>& stack);
+
+
+        std::vector<std::pair<int, double>> betweenness_centrality();
         
+        bool map_compare(std::pair<int, double>& a, std::pair<int, double>& b);
+
+        Graph connected_subgraph(int root, int size, bool write);
 
         //BRANDES
 
@@ -53,6 +69,7 @@ class Graph {
         std::vector<Edge*>& getEdgeList() { return edge_list; }
 
     private:
+
         std::unordered_map<int, Vertex*> adj_list;
         std::vector<Edge*> edge_list;
 
