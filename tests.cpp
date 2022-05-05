@@ -168,6 +168,24 @@ TEST_CASE("Graph BFS Correctness", "[graph][BFS]") {
 
 }
 
+TEST_CASE("Graph Betweenness Centrality", "[graph][algorithm]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/test.txt");
+   reader.readInEdgeList(graph);
+
+   Graph subgraph = graph.connected_subgraph(1, 7, false);
+   REQUIRE(subgraph.getAdjList().size() == 7);
+
+   std::vector<std::pair<int, double>> BC = graph.betweenness_centrality();
+   // for (auto pair : BC) {
+   //    std::cout << "Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
+   // }
+   REQUIRE(BC[0].first == 1);
+   REQUIRE(BC[1].first == 8);
+   REQUIRE(BC[2].first == 5);
+   
+}
+
 TEST_CASE("Reads In Full Data", "[.][full]") {
    Graph graph;
    NodeReader reader("225FPDataset/com-amazon-reduced.ungraph.txt");
