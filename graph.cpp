@@ -113,7 +113,7 @@ void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& 
     }
 }
 
-std::vector<std::pair<int, double>> Graph::betweenness_centrality() {
+std::vector<std::pair<int, double>> Graph::betweenness_centrality(int k) {
     std::map<int, double> CB;
     std::unordered_map<int,std::vector<int>> pred;
     std::unordered_map<int, int> sigma;
@@ -156,6 +156,7 @@ std::vector<std::pair<int, double>> Graph::betweenness_centrality() {
     std::sort(results.begin(), results.end(), [ ]( const std::pair<int, double>& first, const std::pair<int, double>& second ) {
         return first.second > second.second;
     });
+    results.resize(k);
     return results;
 }
 
@@ -193,6 +194,11 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
         ofs.close();
     return g;
 }
+
+void Graph::draw_graph() {
+
+}
+
 
 //O(V+E)
 Graph::~Graph() {

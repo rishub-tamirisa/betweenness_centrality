@@ -176,10 +176,10 @@ TEST_CASE("Graph Betweenness Centrality", "[graph][algorithm]") {
    Graph subgraph = graph.connected_subgraph(1, 7, false);
    REQUIRE(subgraph.getAdjList().size() == 7);
 
-   std::vector<std::pair<int, double>> BC = graph.betweenness_centrality();
-   // for (auto pair : BC) {
-   //    std::cout << "Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
-   // }
+   std::vector<std::pair<int, double>> BC = graph.betweenness_centrality(5);
+   for (auto pair : BC) {
+      std::cout << "Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
+   }
    REQUIRE(BC[0].first == 1);
    REQUIRE(BC[1].first == 8);
    REQUIRE(BC[2].first == 5);
@@ -202,6 +202,15 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       }
       REQUIRE(graph.areAdjacent(548096, 548099));
       REQUIRE(!graph.areAdjacent(548096, 548406));
+   }
+
+   SECTION("Betweenness Centrality on Sub-Graph") {
+      Graph subgraph = graph.connected_subgraph(100000, 300, true);
+
+      std::vector<std::pair<int, double>> BC = subgraph.betweenness_centrality(5);
+      for (auto pair : BC) {
+         std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
+      }
    }
 }
 
