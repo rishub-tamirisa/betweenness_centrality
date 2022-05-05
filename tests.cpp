@@ -194,7 +194,7 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
 
    REQUIRE(graph.getAdjList().size() == 334863 - 11);
 
-   SECTION("Verify Data Cleaned") {
+   SECTION("Verify Data Cleaned", "[full][clean]") {
       auto hash = graph.getAdjList();
       for (auto &pair : hash ) {
          REQUIRE(reader.getLabels().find(pair.first) != reader.getLabels().end());
@@ -204,13 +204,15 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       REQUIRE(!graph.areAdjacent(548096, 548406));
    }
 
-   SECTION("Betweenness Centrality on Sub-Graph") {
+   SECTION("Betweenness Centrality on Sub-Graph", "[full][BC]") {
       Graph subgraph = graph.connected_subgraph(100000, 300, true);
 
       std::vector<std::pair<int, double>> BC = subgraph.betweenness_centrality(5);
-      for (auto pair : BC) {
-         std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
-      }
+      // for (auto pair : BC) {
+      //    std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
+      // }
+      REQUIRE(subgraph.getAdjList().size() == 300);
+      REQUIRE(BC.size() == 5);
    }
 }
 
