@@ -113,7 +113,7 @@ void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& 
     }
 }
 
-std::vector<std::pair<int, double>> Graph::betweenness_centrality() {
+std::vector<std::pair<int, double>> Graph::betweenness_centrality(int k) {
     std::map<int, double> CB;
     std::unordered_map<int,std::vector<int>> pred;
     std::unordered_map<int, int> sigma;
@@ -156,6 +156,7 @@ std::vector<std::pair<int, double>> Graph::betweenness_centrality() {
     std::sort(results.begin(), results.end(), [ ]( const std::pair<int, double>& first, const std::pair<int, double>& second ) {
         return first.second > second.second;
     });
+    results.resize(k);
     return results;
 }
 
@@ -166,24 +167,22 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
     std::ofstream ofs("connected_size_" + std::to_string(size)); 
     std::unordered_map<int, int> visited;
     q.push(root);
-    int counter = 1;
     while (!q.empty()) {
         int front = q.front();
         q.pop();
-        
+        g.insertVertex(front);
         for (auto edge : adj_list[front]->edges) {
             int neighbor = edge->v1->ID == front ? edge->v2->ID : edge->v1->ID;
             if (visited.find(neighbor) == visited.end()) {
                 q.push(neighbor);
-                g.insertVertex(front);
+                
                 g.insertVertex(neighbor);
                 g.insertEdge(front, neighbor, 1);
-                if (write)
-                    ofs << front << " " << neighbor << "\n";
-                counter++;
-                if (counter == size) {
+                if ((int) g.adj_list.size() == size) {
                     return g;
                 }
+                if (write)
+                    ofs << front << " " << neighbor << "\n";
                 visited[neighbor]++;
                 
             } 
@@ -193,6 +192,11 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
         ofs.close();
     return g;
 }
+
+void Graph::draw_graph() {
+
+}
+
 
 //O(V+E)
 Graph::~Graph() {

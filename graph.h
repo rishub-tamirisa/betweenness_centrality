@@ -51,15 +51,15 @@ class Graph {
                         std::unordered_map<int, int>& sigma, std::stack<int>& stack);
 
 
-        std::vector<std::pair<int, double>> betweenness_centrality();
+        std::vector<std::pair<int, double>> betweenness_centrality(int k);
         
         bool map_compare(std::pair<int, double>& a, std::pair<int, double>& b);
 
         Graph connected_subgraph(int root, int size, bool write);
 
-        //BRANDES
-
         //FORCE-DIRECTED DRAWING
+
+        void draw_graph();
 
         ~Graph();
         
