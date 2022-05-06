@@ -84,8 +84,6 @@ std::vector<int> Graph::BFS(int root, int target) {
     return result;
 }
 
-<<<<<<< HEAD
-=======
 void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, 
                                         std::unordered_map<int, int>& sigma, std::stack<int>& stack){
     std::unordered_map<int,int> dist;
@@ -322,7 +320,6 @@ void Graph::draw_graph(int x1, int y1, bool ID) {
     ofs << "\n</svg>";
 }
 
->>>>>>> 31a47a7bbbada4fc05d1884e177f747675fb22b6
 
 //O(V+E)
 Graph::~Graph() {
