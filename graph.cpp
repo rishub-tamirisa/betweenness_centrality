@@ -312,7 +312,7 @@ void Graph::draw_graph(int x1, int y1, bool ID) {
         if (r <= 3) r = 3;
         ofs << "<circle cx=\""<< x1<<"\" cy=\""<<y1<<"\" r=\""<<r<<"\" fill=\""<< "rgb(" << 0<<", "<< v1->color<<", "<< 0 <<")\"/>\n";
         if (ID && r > 5)
-            ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\""<<r<<"\" dy=\".3em\">" << v1->ID << "</text>\n";
+            ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"red\" stroke-width=\"1px\" font-size=\""<<r<<"\" dy=\".3em\">" << v1->ID << "</text>\n";
     }
 
 
