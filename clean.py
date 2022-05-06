@@ -2,7 +2,7 @@ discontinued = []
 ids = []
 ID_VALUES = {}
 try:
-    with open("225FPDataset/amazon-meta.txt", "r") as file_input: #deleted file from git because of large size
+    with open("amazon-meta.txt", "r") as file_input: #deleted file from git because of large size
         lines = file_input.readlines()
         x = len(file_input.readlines())
         with open("225FPDataset/amazon-meta-reduced.txt", "w") as output: 
@@ -27,6 +27,7 @@ try:
             ids.append(temp)
     for i in range(len(ids)):
         ID_VALUES[ids[i]] = None
+    
     with open("225FPDataset/com-amazon.ungraph.txt", "r") as file_input:
         lines = file_input.readlines()
         with open("225FPDataset/com-amazon-reduced.ungraph.txt", "w") as output:
