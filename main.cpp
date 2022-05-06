@@ -18,7 +18,7 @@ int main() {
   // NodeReader reader("connected_size_300.txt");
   // reader.readInEdgeList(graph);
   sub.betweenness_centrality(10);
-  sub.draw_graph(1000, 1000, false);
+  sub.draw_graph(1000, 1000, true);
 
   return 0;
 }

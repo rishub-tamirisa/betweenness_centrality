@@ -206,7 +206,7 @@ void Graph::calc_forces(float x, float y) {
     float C = 0.3;
     float k = C * std::sqrt((x*y)/((float) adj_list.size()));
     std::cout << k << std::endl;
-    for (float t = 0; t < 2; t++) {
+    for (float t = 0; t < 1000; t++) {
         for (auto n : adj_list) {
             Vertex* v = n.second;
             for (auto m : adj_list) {
