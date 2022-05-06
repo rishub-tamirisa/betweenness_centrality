@@ -1,0 +1,67 @@
+<!DOCTYPE svg>
+<svg version="1.1"
+width="2558" height="2894"
+xmlns="http://www.w3.org/2000/svg">
+
+<line x1="1313" y1="1402" x2="908" y2="1143" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="2098" y2="2228" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="1774" y2="1716" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="787" y2="1703" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="49" y2="1350" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="493" y2="799" stroke-width="1" stroke="skyblue"/>
+<line x1="1313" y1="1402" x2="476" y2="49" stroke-width="1" stroke="skyblue"/>
+<line x1="908" y1="1143" x2="1819" y2="2116" stroke-width="1" stroke="skyblue"/>
+<line x1="908" y1="1143" x2="812" y2="605" stroke-width="1" stroke="skyblue"/>
+<line x1="2098" y1="2228" x2="1610" y2="2844" stroke-width="1" stroke="skyblue"/>
+<line x1="2098" y1="2228" x2="1267" y2="1956" stroke-width="1" stroke="skyblue"/>
+<line x1="1372" y1="1343" x2="1819" y2="2116" stroke-width="1" stroke="skyblue"/>
+<line x1="1372" y1="1343" x2="812" y2="605" stroke-width="1" stroke="skyblue"/>
+<line x1="1372" y1="1343" x2="2278" y2="1886" stroke-width="1" stroke="skyblue"/>
+<line x1="1819" y1="2116" x2="1610" y2="2844" stroke-width="1" stroke="skyblue"/>
+<line x1="1819" y1="2116" x2="1860" y2="719" stroke-width="1" stroke="skyblue"/>
+<line x1="1774" y1="1716" x2="1267" y2="1956" stroke-width="1" stroke="skyblue"/>
+<line x1="1774" y1="1716" x2="787" y2="1703" stroke-width="1" stroke="skyblue"/>
+<line x1="1267" y1="1956" x2="2508" y2="1025" stroke-width="1" stroke="skyblue"/>
+<line x1="1267" y1="1956" x2="959" y2="2308" stroke-width="1" stroke="skyblue"/>
+<line x1="787" y1="1703" x2="49" y2="1350" stroke-width="1" stroke="skyblue"/>
+<line x1="787" y1="1703" x2="2508" y2="1025" stroke-width="1" stroke="skyblue"/>
+<line x1="49" y1="1350" x2="493" y2="799" stroke-width="1" stroke="skyblue"/>
+<line x1="493" y1="799" x2="476" y2="49" stroke-width="1" stroke="skyblue"/>
+<line x1="476" y1="49" x2="812" y2="605" stroke-width="1" stroke="skyblue"/>
+<line x1="812" y1="605" x2="2278" y2="1886" stroke-width="1" stroke="skyblue"/>
+<line x1="959" y1="2308" x2="850" y2="896" stroke-width="1" stroke="skyblue"/>
+<line x1="850" y1="896" x2="1860" y2="719" stroke-width="1" stroke="skyblue"/>
+<line x1="1860" y1="719" x2="2278" y2="1886" stroke-width="1" stroke="skyblue"/>
+<circle cx="850" cy="896" r="11" fill="rgb(0, 49, 0)"/>
+<text x="850" y="896" text-anchor="middle" stroke="white" stroke-width="1px" font-size="11" dy=".3em">16</text>
+<circle cx="959" cy="2308" r="11" fill="rgb(0, 49, 0)"/>
+<text x="959" y="2308" text-anchor="middle" stroke="white" stroke-width="1px" font-size="11" dy=".3em">15</text>
+<circle cx="2508" cy="1025" r="3" fill="rgb(0, 0, 0)"/>
+<circle cx="1860" cy="719" r="18" fill="rgb(0, 77, 0)"/>
+<text x="1860" y="719" text-anchor="middle" stroke="white" stroke-width="1px" font-size="18" dy=".3em">17</text>
+<circle cx="2278" cy="1886" r="8" fill="rgb(0, 35, 0)"/>
+<text x="2278" y="1886" text-anchor="middle" stroke="white" stroke-width="1px" font-size="8" dy=".3em">18</text>
+<circle cx="1372" cy="1343" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="1267" cy="1956" r="23" fill="rgb(0, 99, 0)"/>
+<text x="1267" y="1956" text-anchor="middle" stroke="white" stroke-width="1px" font-size="23" dy=".3em">8</text>
+<circle cx="1610" cy="2844" r="7" fill="rgb(0, 31, 0)"/>
+<text x="1610" y="2844" text-anchor="middle" stroke="white" stroke-width="1px" font-size="7" dy=".3em">6</text>
+<circle cx="1819" cy="2116" r="22" fill="rgb(0, 95, 0)"/>
+<text x="1819" y="2116" text-anchor="middle" stroke="white" stroke-width="1px" font-size="22" dy=".3em">5</text>
+<circle cx="493" cy="799" r="3" fill="rgb(0, 0, 0)"/>
+<circle cx="49" cy="1350" r="3" fill="rgb(0, 0, 0)"/>
+<circle cx="787" cy="1703" r="8" fill="rgb(0, 35, 0)"/>
+<text x="787" y="1703" text-anchor="middle" stroke="white" stroke-width="1px" font-size="8" dy=".3em">9</text>
+<circle cx="2098" cy="2228" r="21" fill="rgb(0, 92, 0)"/>
+<text x="2098" y="2228" text-anchor="middle" stroke="white" stroke-width="1px" font-size="21" dy=".3em">3</text>
+<circle cx="1774" cy="1716" r="5" fill="rgb(0, 24, 0)"/>
+<circle cx="812" cy="605" r="17" fill="rgb(0, 74, 0)"/>
+<text x="812" y="605" text-anchor="middle" stroke="white" stroke-width="1px" font-size="17" dy=".3em">13</text>
+<circle cx="908" cy="1143" r="20" fill="rgb(0, 85, 0)"/>
+<text x="908" y="1143" text-anchor="middle" stroke="white" stroke-width="1px" font-size="20" dy=".3em">2</text>
+<circle cx="476" cy="49" r="10" fill="rgb(0, 46, 0)"/>
+<text x="476" y="49" text-anchor="middle" stroke="white" stroke-width="1px" font-size="10" dy=".3em">12</text>
+<circle cx="1313" cy="1402" r="60" fill="rgb(0, 255, 0)"/>
+<text x="1313" y="1402" text-anchor="middle" stroke="white" stroke-width="1px" font-size="60" dy=".3em">1</text>
+
+</svg>

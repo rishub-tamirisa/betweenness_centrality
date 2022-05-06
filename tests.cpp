@@ -176,13 +176,23 @@ TEST_CASE("Graph Betweenness Centrality", "[graph][algorithm]") {
    Graph subgraph = graph.connected_subgraph(1, 7, false);
    REQUIRE(subgraph.getAdjList().size() == 7);
 
-   std::vector<std::pair<int, double>> BC = graph.betweenness_centrality(5);
+   std::vector<std::pair<int, float>> BC = graph.betweenness_centrality(5);
    for (auto pair : BC) {
       std::cout << "Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
    }
    REQUIRE(BC[0].first == 1);
    REQUIRE(BC[1].first == 8);
    REQUIRE(BC[2].first == 5);
+   
+}
+
+TEST_CASE("Graph Draw", "[graph][draw]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/test.txt");
+   reader.readInEdgeList(graph);
+
+   graph.betweenness_centrality(1); //calculate sizes
+   REQUIRE_NOTHROW(graph.draw_graph(1000, 1000, true));
    
 }
 
@@ -207,7 +217,7 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
    SECTION("Betweenness Centrality on Sub-Graph", "[full][BC]") {
       Graph subgraph = graph.connected_subgraph(100000, 300, true);
 
-      std::vector<std::pair<int, double>> BC = subgraph.betweenness_centrality(5);
+      std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
       // for (auto pair : BC) {
       //    std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
       // }

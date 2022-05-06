@@ -12,8 +12,13 @@
 
 int main() {
   Graph graph;
-  NodeReader reader("225FPDataset/com-amazon.ungraph.txt");
+  NodeReader reader("225FPDataset/com-amazon-reduced.ungraph.txt");
   reader.readInEdgeList(graph);
-  //graph.BFS();
+  Graph sub = graph.connected_subgraph(100000, 500, true);
+  // NodeReader reader("connected_size_300.txt");
+  // reader.readInEdgeList(graph);
+  sub.betweenness_centrality(10);
+  sub.draw_graph(1000, 1000, false);
+
   return 0;
 }

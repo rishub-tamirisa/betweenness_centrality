@@ -32,4 +32,5 @@ tests.o : tests.cpp catch.hpp graph.cpp graph.h NodeReader.h
 clean :
 	-rm -f *.o $(EXENAME) test
 	-rm -f connected_size_*
+	-rm -f GraphDrawn_Size*
 
