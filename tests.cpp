@@ -218,9 +218,12 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       Graph subgraph = graph.connected_subgraph(100000, 300, true);
 
       std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
-      // for (auto pair : BC) {
-      //    std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
-      // }
+      for (auto pair : BC) {
+         std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
+      }
+      REQUIRE(BC[0].first == 370312);
+      REQUIRE(BC[1].first == 506956);
+      REQUIRE(BC[2].first == 364286);
       REQUIRE(subgraph.getAdjList().size() == 300);
       REQUIRE(BC.size() == 5);
    }

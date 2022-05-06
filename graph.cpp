@@ -203,16 +203,15 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
 }
 
 void Graph::calc_forces(float x, float y) {
-    float C1 = 0.3, C2 = 0.525, C3 = 0.2;
-    float k = C1 * std::sqrt((x*y)/((float) adj_list.size()));
-    // std::cout << k << std::endl;
-    // float temp = C2 * x;
-    for (float t = 0; t < 1000; t++) {
+    float C = 0.3;
+    float k = C * std::sqrt((x*y)/((float) adj_list.size()));
+    std::cout << k << std::endl;
+    for (float t = 0; t < 2; t++) {
         for (auto n : adj_list) {
             Vertex* v = n.second;
             for (auto m : adj_list) {
                 Vertex* u = m.second;
-                if (u != v) {
+                if (u != v && (u->pos.y != v->pos.y && u->pos.x != v->pos.x)) {
                     Vector diff = v->pos - u->pos;
                     v->disp = v->disp + (diff / diff.mag()) * ((k*k) / diff.mag());
                 }
@@ -226,10 +225,7 @@ void Graph::calc_forces(float x, float y) {
         for (auto n : adj_list) {
             Vertex* v = n.second;
             v->pos = v->pos + v->disp / v->disp.mag();//(v->disp / v->disp.mag()) * std::min(v->disp.mag(), temp);
-            // v->pos.x = std::min(x / 2, std::max(-1 * (x / 2), v->pos.x));
-            // v->pos.y = std::min(y / 2, std::max(-1 * (y / 2), v->pos.y));
         }
-        // temp = temp * C3;
     }
 }
 
@@ -246,7 +242,7 @@ void Graph::normalize_bc() {
             }
         }
         for (auto n : adj_list) {
-            n.second->centrality = (n.second->centrality - min) * ( (float) 60/(max - min));
+            n.second->centrality = (n.second->centrality - min) * ( (float) (adj_list.size() / 5)/(max - min));
             n.second->color = (n.second->color - min) * ( (float) 255/(max - min));
             
         }

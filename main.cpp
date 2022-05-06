@@ -14,7 +14,7 @@ int main() {
   Graph graph;
   NodeReader reader("225FPDataset/com-amazon-reduced.ungraph.txt");
   reader.readInEdgeList(graph);
-  Graph sub = graph.connected_subgraph(100000, 500, true);
+  Graph sub = graph.connected_subgraph(100000, 750, true);
   // NodeReader reader("connected_size_300.txt");
   // reader.readInEdgeList(graph);
   sub.betweenness_centrality(10);
