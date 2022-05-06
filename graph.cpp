@@ -164,7 +164,7 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
     
     std::queue<int> q;
     Graph g;
-    std::ofstream ofs("connected_size_" + std::to_string(size)); 
+    std::ofstream ofs("connected_size_" + std::to_string(size)+".txt"); 
     std::unordered_map<int, int> visited;
     q.push(root);
     while (!q.empty()) {
@@ -193,8 +193,77 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
     return g;
 }
 
-void Graph::draw_graph() {
+double Graph::norm(double x1, double y1, double x2, double y2) {
+    return std::sqrt((x2-x1) * (x2-x1) + (y2-y1)*(y2-y1));
+}
 
+void Graph::calc_forces(double x, double y)) {
+
+    double increment = 0.01;
+    double c1 = 2, c2 = 1, c3 = 1, c4 = 0.3;
+    double C = 0.1;
+    double k = C * std::sqrt((x*y)/((double) adj_list.size()));
+
+    for (double t = 0; t < 100; t++) {
+        for (auto n : adj_list) {
+            Vertex* v1 = n.second;
+            double fx = 0, fy = 0;
+            for (auto m : adj_list) {
+                Vertex* v2 = m.second;
+                if (v2 != v1) {
+                    double dx = v2->x - v1->x;
+                    double dy = v2->y - v1->y;
+                    double d = norm(v1->x, v1->y, v2->x, v2->y);
+                    dx = dx / d;
+                    dy = dy / d;
+                    if (areAdjacent(v1->ID, v2->ID)) {
+                        fx = fx + dx * (d*d)/k;//c1 * std::log10(d/c2);///(-1 * k * (d - dist));
+                        fy = fy + dy * (d*d)/k;//c1 * std::log10(d/c2); //(-1 * k * (d - dist));
+                    } //else {
+                        fx = fx + dx * -1 * (k*k)/d;//c3/(d*d);//1/(d*d);
+                        fy = fy + dy * -1 * (k*k)/d;//c3/(d*d); //1/(d*d);
+                    //}
+                }
+            }
+            // double mag_vel = std::sqrt(v1->velx * v1->velx + v1->vely * v1->vely);
+            // v1->velx = v1->velx + (fx) * c4;
+            // v1->vely = v1->vely + (fy) * c4;
+            v1->x = v1->x + fx * c4;
+            v1->y = v1->y + fy * c4;
+        }
+        
+    }
+}
+
+void Graph::draw_graph(int x, int y) {
+    std::ofstream ofs("GraphDrawn_Size" + std::to_string(adj_list.size()) +".svg"); 
+    calc_forces(x, y);
+
+    ofs << 
+        "<!DOCTYPE svg>\n" <<
+        "<svg version=\"1.1\"\n" <<
+        "width=\""<<x<<"\" height=\""<<y<<"\"\n" << 
+        "xmlns=\"http://www.w3.org/2000/svg\">\n\n";
+    for (auto edge : edge_list) {
+        int x1 = edge->v1->x;
+        int y1 = edge->v1->y;
+        int x2 = edge->v2->x;
+        int y2 = edge->v2->y;
+        ofs << "<line x1=\"" << x1 <<"\" y1=\""<< y1 <<"\" x2=\""<< x2 <<"\" y2=\""<< y2 <<"\" stroke-width=\"1\" stroke=\"black\"/>\n";
+    }
+    for (auto edge : edge_list) {
+        int x1 = edge->v1->x;
+        int y1 = edge->v1->y;
+        int x2 = edge->v2->x;
+        int y2 = edge->v2->y;
+        ofs << "<circle cx=\""<< x1<<"\" cy=\""<<y1<<"\" r=\"10\"/>\n";
+        ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\"smaller\" dy=\".3em\">" << edge->v1->ID << "</text>\n";
+        ofs << "<circle cx=\""<< x2<<"\" cy=\""<<y2<<"\" r=\"10\"/>\n";
+        ofs << "<text x=\""<<x2<<"\" y=\""<<y2<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\"smaller\" dy=\".3em\">" << edge->v2->ID << "</text>\n";
+    }
+
+
+    ofs << "\n</svg>";
 }
 
 

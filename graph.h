@@ -11,6 +11,7 @@
 #include <iostream>
 #include <fstream>
 #include <stack>
+#include <cmath>
 
 class Graph {
     public:
@@ -18,10 +19,20 @@ class Graph {
 
         class Vertex {
             public:
+                double x;
+                double y;
+                double velx;
+                double vely;
                 int ID;
                 int degree;
                 std::list<Edge*> edges;
-                Vertex(int id) : ID(id), degree(0) {}
+                Vertex(int id) : ID(id), degree(0) {
+                    x = std::rand() % 300;
+                    y = std::rand() % 300;
+                    velx = 0.0;
+                    vely = 0.0;
+                    std::cout << x << y << std::endl;
+                }
         };
 
         class Edge {
@@ -60,6 +71,11 @@ class Graph {
         //FORCE-DIRECTED DRAWING
 
         void draw_graph();
+
+        double norm(double x1, double y1, double x2, double y2);
+
+
+        void calc_forces();
 
         ~Graph();
         

@@ -186,6 +186,15 @@ TEST_CASE("Graph Betweenness Centrality", "[graph][algorithm]") {
    
 }
 
+TEST_CASE("Graph Draw", "[graph][draw]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/test.txt");
+   reader.readInEdgeList(graph);
+
+   REQUIRE_NOTHROW(graph.draw_graph(500, 500));
+   
+}
+
 TEST_CASE("Reads In Full Data", "[.][full]") {
    Graph graph;
    NodeReader reader("225FPDataset/com-amazon-reduced.ungraph.txt");
