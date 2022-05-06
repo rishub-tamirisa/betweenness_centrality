@@ -1,5 +1,7 @@
 #include "graph.h"
 
+
+
 //O(1)
 void Graph::insertVertex(int key) {
     if (adj_list.find(key) == adj_list.end()) {
@@ -113,8 +115,8 @@ void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& 
     }
 }
 
-std::vector<std::pair<int, double>> Graph::betweenness_centrality(int k) {
-    std::map<int, double> CB;
+std::vector<std::pair<int, float>> Graph::betweenness_centrality(int k) {
+    std::map<int, float> CB;
     std::unordered_map<int,std::vector<int>> pred;
     std::unordered_map<int, int> sigma;
     std::unordered_map<int, int> delta;
@@ -139,8 +141,8 @@ std::vector<std::pair<int, double>> Graph::betweenness_centrality(int k) {
             for (auto v : pred[w]) {
                 // std::cout << delta[v] << " " << v << std::endl;
                 delta[v] = delta[v] + 
-                ((double) sigma[v] / (double) sigma[w]) * (1 + delta[w]);
-                // std::cout << sigma[std::to_string(s) + "_" + std::to_string(v)] / (double) sigma[std::to_string(s) + "_" + std::to_string(w)] << std::endl;
+                ((float) sigma[v] / (float) sigma[w]) * (1 + delta[w]);
+                // std::cout << sigma[std::to_string(s) + "_" + std::to_string(v)] / (float) sigma[std::to_string(s) + "_" + std::to_string(w)] << std::endl;
                 
             }
             if (w != s) {
@@ -149,14 +151,17 @@ std::vector<std::pair<int, double>> Graph::betweenness_centrality(int k) {
         }
         // sigma.clear();
     }
-    std::vector<std::pair<int, double>> results;
+    std::vector<std::pair<int, float>> results;
     for (auto& n : CB) {
         results.push_back(n);
+        adj_list[n.first]->centrality = n.second;
+        adj_list[n.first]->color = n.second;
     }
-    std::sort(results.begin(), results.end(), [ ]( const std::pair<int, double>& first, const std::pair<int, double>& second ) {
+    std::sort(results.begin(), results.end(), [ ]( const std::pair<int, float>& first, const std::pair<int, float>& second ) {
         return first.second > second.second;
     });
     results.resize(k);
+    bc_computed = true;
     return results;
 }
 
@@ -165,8 +170,12 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
     std::queue<int> q;
     Graph g;
     std::ofstream ofs("connected_size_" + std::to_string(size)+".txt"); 
+    if (!write) {
+        ofs.close();
+    }
     std::unordered_map<int, int> visited;
     q.push(root);
+    g.insertVertex(root);
     while (!q.empty()) {
         int front = q.front();
         q.pop();
@@ -193,73 +202,122 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
     return g;
 }
 
-double Graph::norm(double x1, double y1, double x2, double y2) {
-    return std::sqrt((x2-x1) * (x2-x1) + (y2-y1)*(y2-y1));
-}
-
-void Graph::calc_forces(double x, double y)) {
-
-    double increment = 0.01;
-    double c1 = 2, c2 = 1, c3 = 1, c4 = 0.3;
-    double C = 0.1;
-    double k = C * std::sqrt((x*y)/((double) adj_list.size()));
-
-    for (double t = 0; t < 100; t++) {
+void Graph::calc_forces(float x, float y) {
+    float C1 = 0.3, C2 = 0.525, C3 = 0.2;
+    float k = C1 * std::sqrt((x*y)/((float) adj_list.size()));
+    std::cout << k << std::endl;
+    // float temp = C2 * x;
+    for (float t = 0; t < 1000; t++) {
         for (auto n : adj_list) {
-            Vertex* v1 = n.second;
-            double fx = 0, fy = 0;
+            Vertex* v = n.second;
             for (auto m : adj_list) {
-                Vertex* v2 = m.second;
-                if (v2 != v1) {
-                    double dx = v2->x - v1->x;
-                    double dy = v2->y - v1->y;
-                    double d = norm(v1->x, v1->y, v2->x, v2->y);
-                    dx = dx / d;
-                    dy = dy / d;
-                    if (areAdjacent(v1->ID, v2->ID)) {
-                        fx = fx + dx * (d*d)/k;//c1 * std::log10(d/c2);///(-1 * k * (d - dist));
-                        fy = fy + dy * (d*d)/k;//c1 * std::log10(d/c2); //(-1 * k * (d - dist));
-                    } //else {
-                        fx = fx + dx * -1 * (k*k)/d;//c3/(d*d);//1/(d*d);
-                        fy = fy + dy * -1 * (k*k)/d;//c3/(d*d); //1/(d*d);
-                    //}
+                Vertex* u = m.second;
+                if (u != v) {
+                    Vector diff = v->pos - u->pos;
+                    v->disp = v->disp + (diff / diff.mag()) * ((k*k) / diff.mag());
                 }
             }
-            // double mag_vel = std::sqrt(v1->velx * v1->velx + v1->vely * v1->vely);
-            // v1->velx = v1->velx + (fx) * c4;
-            // v1->vely = v1->vely + (fy) * c4;
-            v1->x = v1->x + fx * c4;
-            v1->y = v1->y + fy * c4;
         }
-        
+        for (auto e : edge_list) {
+            Vector diff = e->v1->pos - e->v2->pos;
+            e->v1->disp = e->v1->disp - (diff / diff.mag()) * ((diff.mag() * diff.mag()) / k);
+            e->v2->disp = e->v2->disp - (diff / diff.mag()) * ((diff.mag() * diff.mag()) / k);
+        }
+        for (auto n : adj_list) {
+            Vertex* v = n.second;
+            v->pos = v->pos + v->disp / v->disp.mag();//(v->disp / v->disp.mag()) * std::min(v->disp.mag(), temp);
+            // v->pos.x = std::min(x / 2, std::max(-1 * (x / 2), v->pos.x));
+            // v->pos.y = std::min(y / 2, std::max(-1 * (y / 2), v->pos.y));
+        }
+        // temp = temp * C3;
     }
 }
 
-void Graph::draw_graph(int x, int y) {
-    std::ofstream ofs("GraphDrawn_Size" + std::to_string(adj_list.size()) +".svg"); 
-    calc_forces(x, y);
+void Graph::normalize_bc() {
+    if (bc_computed) {
+        int min = 1000000;
+        int max = -1;
+        for (auto n : adj_list) {
+            if (n.second->centrality < min) {
+                min = n.second->centrality;
+            }
+            if (n.second->centrality > max) {
+                max = n.second->centrality;
+            }
+        }
+        for (auto n : adj_list) {
+            n.second->centrality = (n.second->centrality - min) * ( (float) 60/(max - min));
+            n.second->color = (n.second->color - min) * ( (float) 255/(max - min));
+            
+        }
+    }
+}
 
+void Graph::init_pos(int x, int y) {
+    for (auto n : adj_list) {
+        Vector pos_temp(std::rand() % x, std::rand() % y);
+        n.second->pos = pos_temp;
+    }
+}
+
+void Graph::set_dims(int& x, int& y) {
+    int minx = 1000000, maxx = -1000000, miny = 1000000, maxy = -1000000;
+    for (auto m : adj_list) {
+        Vertex* v = m.second;
+        if (v->pos.x < minx) {
+            minx = v->pos.x;
+        }
+        if (v->pos.y < miny) {
+            miny = v->pos.y;
+        }
+        if (v->pos.x > maxx) {
+            maxx = v->pos.x;
+        }
+        if (v->pos.y > maxy) {
+            maxy = v->pos.y;
+        }
+    }
+    for (auto n : adj_list) {
+        n.second->pos.x = n.second->pos.x - minx + 50;
+        n.second->pos.y = n.second->pos.y - miny + 50;
+        
+    }
+
+    x = maxx - minx + 100;
+    y = maxy - miny + 100;
+    std::cout << minx << " " << miny << std::endl;
+}
+
+void Graph::draw_graph(int x1, int y1, bool ID) {
+    std::ofstream ofs("GraphDrawn_Size" + std::to_string(adj_list.size()) +".svg"); 
+    int m = 1;
+    int x = x1 * m, y = y1 * m;
+    init_pos(x, y);
+    calc_forces(x, y);
+    normalize_bc();
+    set_dims(x, y);
+    std::cout << x << " " << y << std::endl; 
     ofs << 
         "<!DOCTYPE svg>\n" <<
         "<svg version=\"1.1\"\n" <<
         "width=\""<<x<<"\" height=\""<<y<<"\"\n" << 
         "xmlns=\"http://www.w3.org/2000/svg\">\n\n";
     for (auto edge : edge_list) {
-        int x1 = edge->v1->x;
-        int y1 = edge->v1->y;
-        int x2 = edge->v2->x;
-        int y2 = edge->v2->y;
-        ofs << "<line x1=\"" << x1 <<"\" y1=\""<< y1 <<"\" x2=\""<< x2 <<"\" y2=\""<< y2 <<"\" stroke-width=\"1\" stroke=\"black\"/>\n";
+        int x1 = (edge->v1->pos.x); //+ x / 2) / m;
+        int y1 = (edge->v1->pos.y); //+ y / 2) / m;
+        int x2 = (edge->v2->pos.x); ///+ x / 2) / m;
+        int y2 = (edge->v2->pos.y); ///+ y / 2) / m;
+        ofs << "<line x1=\"" << x1 <<"\" y1=\""<< y1 <<"\" x2=\""<< x2 <<"\" y2=\""<< y2 <<"\" stroke-width=\"1\" stroke=\"skyblue\"/>\n";
     }
-    for (auto edge : edge_list) {
-        int x1 = edge->v1->x;
-        int y1 = edge->v1->y;
-        int x2 = edge->v2->x;
-        int y2 = edge->v2->y;
-        ofs << "<circle cx=\""<< x1<<"\" cy=\""<<y1<<"\" r=\"10\"/>\n";
-        ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\"smaller\" dy=\".3em\">" << edge->v1->ID << "</text>\n";
-        ofs << "<circle cx=\""<< x2<<"\" cy=\""<<y2<<"\" r=\"10\"/>\n";
-        ofs << "<text x=\""<<x2<<"\" y=\""<<y2<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\"smaller\" dy=\".3em\">" << edge->v2->ID << "</text>\n";
+    for (auto v : adj_list) {
+        Vertex* v1 = v.second;
+        int x1 = (v1->pos.x); //+ x / 2) / m;
+        int y1 = (v1->pos.y); //+ y / 2) / m;
+        int r = v1->centrality == -1 ? 7 : v1->centrality;
+        if (r <= 3) r = 3;
+        ofs << "<circle cx=\""<< x1<<"\" cy=\""<<y1<<"\" r=\""<<r<<"\" fill=\""<< "rgb(" << 0<<", "<< v1->color<<", "<< 0 <<")\"/>\n";
+        if (ID && r > 5)
+            ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"white\" stroke-width=\"1px\" font-size=\""<<r<<"\" dy=\".3em\">" << v1->ID << "</text>\n";
     }
 
 

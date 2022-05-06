@@ -17,21 +17,33 @@ class Graph {
     public:
         class Edge; // forward declaration
 
+        class Vector {
+            public:
+                float x;
+                float y;
+                Vector(float _x, float _y) : x(_x), y(_y) {}
+                Vector() : x(0), y(0) {}
+                float mag() { return std::sqrt(x*x + y*y); }
+                Vector operator+(const Vector& v2) {return Vector(x + v2.x, y + v2.y); }
+                Vector operator-(const Vector& v2) {return Vector(x - v2.x, y - v2.y); }
+                Vector operator/(const float scalar) {return Vector(x / scalar, y / scalar); }
+                Vector operator*(const float scalar) {return Vector(x * scalar, y * scalar); }
+
+
+        };
+
         class Vertex {
             public:
-                double x;
-                double y;
-                double velx;
-                double vely;
+                Vector pos;
+                Vector disp;
+                int centrality;
+                int color;
                 int ID;
                 int degree;
                 std::list<Edge*> edges;
-                Vertex(int id) : ID(id), degree(0) {
-                    x = std::rand() % 300;
-                    y = std::rand() % 300;
-                    velx = 0.0;
-                    vely = 0.0;
-                    std::cout << x << y << std::endl;
+                Vertex(int id) : centrality(0), color(0), ID(id), degree(-1) {
+                    Vector disp_temp(0,0);
+                    disp = disp_temp;
                 }
         };
 
@@ -42,6 +54,10 @@ class Graph {
                 Vertex* v2;
                 Edge(Vertex* _v1, Vertex* _v2, int w) : weight(w), v1(_v1), v2(_v2) {}
         };
+
+        
+
+        
 
         void insertVertex(int key);
 
@@ -62,20 +78,21 @@ class Graph {
                         std::unordered_map<int, int>& sigma, std::stack<int>& stack);
 
 
-        std::vector<std::pair<int, double>> betweenness_centrality(int k);
+        std::vector<std::pair<int, float>> betweenness_centrality(int k);
         
-        bool map_compare(std::pair<int, double>& a, std::pair<int, double>& b);
+        bool map_compare(std::pair<int, float>& a, std::pair<int, float>& b);
 
         Graph connected_subgraph(int root, int size, bool write);
 
         //FORCE-DIRECTED DRAWING
 
-        void draw_graph();
+        void draw_graph(int x, int y, bool ID);
 
-        double norm(double x1, double y1, double x2, double y2);
+        void calc_forces(float x, float y);
 
+        void init_pos(int x, int y);
 
-        void calc_forces();
+        void set_dims(int& x, int& y);
 
         ~Graph();
         
@@ -84,9 +101,14 @@ class Graph {
 
         std::vector<Edge*>& getEdgeList() { return edge_list; }
 
-    private:
+        void normalize_bc();
 
+
+    private:
+        bool bc_computed = false;
         std::unordered_map<int, Vertex*> adj_list;
         std::vector<Edge*> edge_list;
+
+
 
 };
