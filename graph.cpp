@@ -205,7 +205,7 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
 void Graph::calc_forces(float x, float y) {
     float C1 = 0.3, C2 = 0.525, C3 = 0.2;
     float k = C1 * std::sqrt((x*y)/((float) adj_list.size()));
-    std::cout << k << std::endl;
+    // std::cout << k << std::endl;
     // float temp = C2 * x;
     for (float t = 0; t < 1000; t++) {
         for (auto n : adj_list) {
@@ -285,7 +285,7 @@ void Graph::set_dims(int& x, int& y) {
 
     x = maxx - minx + 100;
     y = maxy - miny + 100;
-    std::cout << minx << " " << miny << std::endl;
+    // std::cout << minx << " " << miny << std::endl;
 }
 
 void Graph::draw_graph(int x1, int y1, bool ID) {
@@ -296,7 +296,7 @@ void Graph::draw_graph(int x1, int y1, bool ID) {
     calc_forces(x, y);
     normalize_bc();
     set_dims(x, y);
-    std::cout << x << " " << y << std::endl; 
+    // std::cout << x << " " << y << std::endl; 
     ofs << 
         "<!DOCTYPE svg>\n" <<
         "<svg version=\"1.1\"\n" <<
