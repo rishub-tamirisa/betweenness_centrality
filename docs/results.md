@@ -4,9 +4,9 @@
 
 
 ## Betweenness Centrality (Brandes Algorithm) <br>
-This algorithm measures the centrality of a node in a graph based on the unweighted shortest path options. It is run in O(VE) time and uses O(V+E) space complexity, which is better than our anticipated O(V^2) space complexity. <br>
+This algorithm measures the centrality of a node in a graph based on the unweighted shortest path options. It is run in `O(VE)` time and uses `O(V+E)` space complexity, which is better than our anticipated `O(V^2)` space complexity. <br>
 
-Our main algorithm `betweenness_centrality(int k)` employs `Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, std::unordered_map<int, int>& sigma, std::stack<int>& stack)` to find shortest paths for all the nodes and stores it. This is an implementation of BFS apart from the main standalone algorithm. We needed this to be done in order to significantly clean up the code for Brandes, and act as an effective re-implementation of the BFS at the same time <br>
+Our main algorithm `betweenness_centrality(int k)` employs `Brandes_BFS_helper(int s, unordered_map<int,std::vector<int>>& pred,unordered_map<int, int>& sigma, stack<int>& stack)` to find shortest paths for all the nodes and stores it. This is an implementation of BFS apart from the main standalone algorithm. We needed this to be done in order to significantly clean up the code for Brandes, and act as an effective re-implementation of the BFS at the same time <br>
  
 We followed the Brandes algorithm from the original paper from its pseudocode to generate our own implementation of it. <br>
 
