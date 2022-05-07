@@ -179,7 +179,6 @@ TEST_CASE("Graph Betweenness Centrality", "[graph][BC]") {
    Graph graph;
    NodeReader reader("225FPDataset/test.txt");
    reader.readInEdgeList(graph);
-   Graph subgraph = graph.connected_subgraph(1, 7);
 
    std::vector<std::pair<int, float>> BC = graph.betweenness_centrality(5);
    
