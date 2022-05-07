@@ -271,6 +271,4 @@ class Graph {
         * on their centralities for better graph drawing output
         */
         void normalize_bc();
-
-
 };
