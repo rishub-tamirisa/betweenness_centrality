@@ -3,24 +3,24 @@
 *309fc45c-e3d6-4289-9f69-65753fd6980c*
 
 ## Core Project File Structure
-├── docs
-├── test_output
-│   ├── GraphDrawn_SizeK.svg
-│   ├── GraphDrawn_SizeK+1.svg
-│   └── etc.
-├── 225FPDataset
-│   ├── amazon-meta-reduced.txt
-│   ├── com-amazon-reduced.ungraph.txt
-│   └── test.txt
-├── catch.hpp
-├── catchmain.cpp
-├── clean.py
-├── graph.cpp
-├── graph.h
-├── NodeReader.cpp
-├── NodeReader.h
-├── Makefile
-└── README.md
+├── docs <br>
+├── test_output<br>
+│   ├── GraphDrawn_SizeK.svg<br>
+│   ├── GraphDrawn_SizeK+1.svg<br>
+│   └── etc.<br>
+├── 225FPDataset<br>
+│   ├── amazon-meta-reduced.txt<br>
+│   ├── com-amazon-reduced.ungraph.txt<br>
+│   └── test.txt<br>
+├── catch.hpp<br>
+├── catchmain.cpp<br>
+├── clean.py<br>
+├── graph.cpp<br>
+├── graph.h<br>
+├── NodeReader.cpp<br>
+├── NodeReader.h<br>
+├── Makefile<br>
+└── README.md<br>
 
 
 
