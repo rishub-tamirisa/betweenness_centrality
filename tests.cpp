@@ -194,7 +194,7 @@ TEST_CASE("Graph Draw", "[graph][draw]") {
    reader.readInEdgeList(graph);
 
    graph.betweenness_centrality(1);
-   REQUIRE_NOTHROW(graph.draw_graph("", 1000, 1000, true));
+   REQUIRE_NOTHROW(graph.draw_graph("test_output", 1000, 1000, true));
    
 }
 
@@ -206,7 +206,7 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
 
    REQUIRE(graph.getAdjList().size() == 334863 - 11);
 
-   SECTION("Verify Data Cleaned", "[full][clean]") {
+   SECTION("Verify Data Cleaned") {
       auto hash = graph.getAdjList();
       for (auto &pair : hash ) {
          REQUIRE(reader.getLabels().find(pair.first) != reader.getLabels().end());
@@ -216,7 +216,7 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       REQUIRE(!graph.areAdjacent(548096, 548406));
    }
 
-   SECTION("Betweenness Centrality on Sub-Graph", "[full][BC]") {
+   SECTION("Betweenness Centrality on Sub-Graph") {
       Graph subgraph = graph.connected_subgraph(100000, 300);
 
       std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
@@ -228,13 +228,13 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       REQUIRE(BC.size() == 5);
    }
    
-   SECTION("Dataset subset Graph Draw", "[full][draw]") {
+   SECTION("Dataset subset Graph Draw") {
       Graph subgraph = graph.connected_subgraph(100000, 750);
       std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
-      REQUIRE_NOTHROW(subgraph.draw_graph("", 1000, 1000, true));
+      REQUIRE_NOTHROW(subgraph.draw_graph("test_output", 1000, 1000, true));
    }
 
-   SECTION("BFS on Graph", "[full][BFS]") {
+   SECTION("BFS on Graph") {
       std::vector<int> path = graph.BFS(1, 404753);
       std::vector<int> correct = {1, 346495, 143523, 282951, 246278, 211432, 24849, 205174, 516401, 166838, 329844, 81706, 455139, 450413, 404753};
       REQUIRE(match_vec(path, correct));
