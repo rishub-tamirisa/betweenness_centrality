@@ -64,7 +64,7 @@ This would run betweenness centrality and force directed graph drawing on a subg
 
 ## Important Notes:
 To view the graph drawing output, an `SVG` renderer must be used. The easiest method is to open the `SVG` file in a standard internet browser.
-
+* SVG was used because it is a human-readable image format that supports vector graphics, and requires no external libraries. The image can be viewed natively in Github or by opening the image from its file location in a default internet browser (Google Chrome, etc.)
 ### Workflow
 
 On local branch: <br>
