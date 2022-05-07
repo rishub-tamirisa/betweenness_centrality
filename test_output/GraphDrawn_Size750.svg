@@ -950,7 +950,7 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="119" cy="376" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="927" cy="234" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="116" cy="338" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="589" cy="668" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="589" cy="668" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="712" cy="926" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="512" cy="75" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="892" cy="802" r="3" fill="rgb(0, 0, 0)"/>
@@ -959,8 +959,7 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="767" cy="155" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="484" cy="123" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="61" cy="601" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="342" cy="445" r="12" fill="rgb(0, 4, 0)"/>
-<text x="342" y="445" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">103228</text>
+<circle cx="342" cy="445" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="292" cy="808" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="483" cy="832" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="613" cy="45" r="3" fill="rgb(0, 0, 0)"/>
@@ -968,13 +967,12 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="294" cy="405" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="434" cy="22" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="657" cy="240" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="424" cy="300" r="38" fill="rgb(0, 14, 0)"/>
-<text x="424" y="300" text-anchor="middle" stroke="red" stroke-width="1px" font-size="38" dy=".3em">210067</text>
+<circle cx="424" cy="300" r="8" fill="rgb(0, 14, 0)"/>
+<text x="424" y="300" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">210067</text>
 <circle cx="772" cy="126" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="287" cy="969" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="977" cy="334" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="613" cy="336" r="18" fill="rgb(0, 6, 0)"/>
-<text x="613" y="336" text-anchor="middle" stroke="red" stroke-width="1px" font-size="18" dy=".3em">534882</text>
+<circle cx="613" cy="336" r="4" fill="rgb(0, 6, 0)"/>
 <circle cx="720" cy="264" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="217" cy="842" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="285" cy="176" r="3" fill="rgb(0, 0, 0)"/>
@@ -993,8 +991,7 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="426" cy="64" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="744" cy="752" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="71" cy="815" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="313" cy="466" r="6" fill="rgb(0, 2, 0)"/>
-<text x="313" y="466" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">339584</text>
+<circle cx="313" cy="466" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="157" cy="293" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="121" cy="807" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="236" cy="925" r="3" fill="rgb(0, 0, 0)"/>
@@ -1002,14 +999,14 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="493" cy="978" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="103" cy="584" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="717" cy="87" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="545" cy="467" r="675" fill="rgb(0, 254, 0)"/>
-<text x="545" y="467" text-anchor="middle" stroke="red" stroke-width="1px" font-size="675" dy=".3em">370312</text>
+<circle cx="545" cy="467" r="150" fill="rgb(0, 254, 0)"/>
+<text x="545" y="467" text-anchor="middle" stroke="red" stroke-width="1px" font-size="150" dy=".3em">370312</text>
 <circle cx="445" cy="152" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="739" cy="749" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="862" cy="206" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="295" cy="51" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="546" cy="683" r="88" fill="rgb(0, 33, 0)"/>
-<text x="546" y="683" text-anchor="middle" stroke="red" stroke-width="1px" font-size="88" dy=".3em">69732</text>
+<circle cx="546" cy="683" r="19" fill="rgb(0, 33, 0)"/>
+<text x="546" y="683" text-anchor="middle" stroke="red" stroke-width="1px" font-size="19" dy=".3em">69732</text>
 <circle cx="30" cy="682" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="52" cy="326" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="113" cy="331" r="3" fill="rgb(0, 0, 0)"/>
@@ -1018,8 +1015,8 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="672" cy="823" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="801" cy="484" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="640" cy="97" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="628" cy="682" r="63" fill="rgb(0, 23, 0)"/>
-<text x="628" y="682" text-anchor="middle" stroke="red" stroke-width="1px" font-size="63" dy=".3em">46994</text>
+<circle cx="628" cy="682" r="14" fill="rgb(0, 23, 0)"/>
+<text x="628" y="682" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">46994</text>
 <circle cx="179" cy="259" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="55" cy="351" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="641" cy="976" r="3" fill="rgb(0, 0, 0)"/>
@@ -1027,7 +1024,7 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="555" cy="819" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="959" cy="346" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="449" cy="948" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="472" cy="658" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="472" cy="658" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="666" cy="828" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="945" cy="555" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="145" cy="758" r="3" fill="rgb(0, 0, 0)"/>
@@ -1036,41 +1033,35 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="796" cy="528" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="459" cy="967" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="450" cy="127" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="674" cy="327" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="674" cy="327" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="242" cy="348" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="871" cy="874" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="139" cy="404" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="781" cy="180" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="899" cy="321" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="718" cy="183" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="337" cy="574" r="10" fill="rgb(0, 3, 0)"/>
-<text x="337" y="574" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">410845</text>
+<circle cx="337" cy="574" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="124" cy="181" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="94" cy="402" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="956" cy="690" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="935" cy="388" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="944" cy="569" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="667" cy="640" r="6" fill="rgb(0, 2, 0)"/>
-<text x="667" y="640" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">298442</text>
+<circle cx="667" cy="640" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="723" cy="224" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="528" cy="118" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="568" cy="332" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="568" cy="332" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="69" cy="349" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="504" cy="157" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="638" cy="356" r="8" fill="rgb(0, 3, 0)"/>
-<text x="638" y="356" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">21956</text>
-<circle cx="661" cy="542" r="16" fill="rgb(0, 6, 0)"/>
-<text x="661" y="542" text-anchor="middle" stroke="red" stroke-width="1px" font-size="16" dy=".3em">31520</text>
+<circle cx="638" cy="356" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="661" cy="542" r="3" fill="rgb(0, 6, 0)"/>
 <circle cx="100" cy="710" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="377" cy="457" r="8" fill="rgb(0, 3, 0)"/>
-<text x="377" y="457" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">177540</text>
+<circle cx="377" cy="457" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="625" cy="818" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="349" cy="361" r="4" fill="rgb(0, 1, 0)"/>
-<circle cx="387" cy="521" r="4" fill="rgb(0, 1, 0)"/>
-<circle cx="498" cy="806" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="349" cy="361" r="3" fill="rgb(0, 1, 0)"/>
+<circle cx="387" cy="521" r="3" fill="rgb(0, 1, 0)"/>
+<circle cx="498" cy="806" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="69" cy="565" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="723" cy="669" r="10" fill="rgb(0, 3, 0)"/>
-<text x="723" y="669" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">6012</text>
+<circle cx="723" cy="669" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="709" cy="174" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="514" cy="896" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="318" cy="49" r="3" fill="rgb(0, 0, 0)"/>
@@ -1087,81 +1078,65 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="538" cy="147" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="573" cy="223" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="551" cy="50" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="358" cy="507" r="12" fill="rgb(0, 4, 0)"/>
-<text x="358" y="507" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">426516</text>
-<circle cx="293" cy="441" r="10" fill="rgb(0, 3, 0)"/>
-<text x="293" y="441" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">385869</text>
+<circle cx="358" cy="507" r="3" fill="rgb(0, 4, 0)"/>
+<circle cx="293" cy="441" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="957" cy="686" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="516" cy="306" r="18" fill="rgb(0, 6, 0)"/>
-<text x="516" y="306" text-anchor="middle" stroke="red" stroke-width="1px" font-size="18" dy=".3em">406366</text>
-<circle cx="556" cy="597" r="6" fill="rgb(0, 2, 0)"/>
-<text x="556" y="597" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">411762</text>
+<circle cx="516" cy="306" r="4" fill="rgb(0, 6, 0)"/>
+<circle cx="556" cy="597" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="382" cy="307" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="886" cy="422" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="681" cy="903" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="171" cy="898" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="455" cy="831" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="897" cy="267" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="772" cy="560" r="8" fill="rgb(0, 3, 0)"/>
-<text x="772" y="560" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">242808</text>
+<circle cx="772" cy="560" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="500" cy="876" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="384" cy="397" r="22" fill="rgb(0, 8, 0)"/>
-<text x="384" y="397" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">186796</text>
+<circle cx="384" cy="397" r="5" fill="rgb(0, 8, 0)"/>
 <circle cx="180" cy="251" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="815" cy="258" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="250" cy="415" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="373" cy="478" r="4" fill="rgb(0, 1, 0)"/>
-<circle cx="556" cy="555" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="373" cy="478" r="3" fill="rgb(0, 1, 0)"/>
+<circle cx="556" cy="555" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="622" cy="980" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="733" cy="61" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="432" cy="204" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="685" cy="417" r="6" fill="rgb(0, 2, 0)"/>
-<text x="685" y="417" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">189020</text>
+<circle cx="685" cy="417" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="635" cy="123" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="418" cy="48" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="306" cy="427" r="16" fill="rgb(0, 6, 0)"/>
-<text x="306" y="427" text-anchor="middle" stroke="red" stroke-width="1px" font-size="16" dy=".3em">294671</text>
+<circle cx="306" cy="427" r="3" fill="rgb(0, 6, 0)"/>
 <circle cx="123" cy="289" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="879" cy="446" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="593" cy="400" r="28" fill="rgb(0, 10, 0)"/>
-<text x="593" y="400" text-anchor="middle" stroke="red" stroke-width="1px" font-size="28" dy=".3em">231320</text>
-<circle cx="297" cy="390" r="14" fill="rgb(0, 5, 0)"/>
-<text x="297" y="390" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">292362</text>
+<circle cx="593" cy="400" r="6" fill="rgb(0, 10, 0)"/>
+<text x="593" y="400" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">231320</text>
+<circle cx="297" cy="390" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="431" cy="16" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="540" cy="664" r="16" fill="rgb(0, 6, 0)"/>
-<text x="540" y="664" text-anchor="middle" stroke="red" stroke-width="1px" font-size="16" dy=".3em">101914</text>
+<circle cx="540" cy="664" r="3" fill="rgb(0, 6, 0)"/>
 <circle cx="185" cy="318" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="83" cy="766" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="688" cy="160" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="893" cy="223" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="554" cy="17" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="549" cy="314" r="12" fill="rgb(0, 4, 0)"/>
-<text x="549" y="314" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">375666</text>
+<circle cx="549" cy="314" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="382" cy="524" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="443" cy="894" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="568" cy="365" r="10" fill="rgb(0, 3, 0)"/>
-<text x="568" y="365" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">533664</text>
+<circle cx="568" cy="365" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="770" cy="731" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="226" cy="539" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="360" cy="584" r="150" fill="rgb(0, 56, 0)"/>
-<text x="360" y="584" text-anchor="middle" stroke="red" stroke-width="1px" font-size="150" dy=".3em">525728</text>
+<circle cx="360" cy="584" r="33" fill="rgb(0, 56, 0)"/>
+<text x="360" y="584" text-anchor="middle" stroke="red" stroke-width="1px" font-size="33" dy=".3em">525728</text>
 <circle cx="245" cy="749" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="412" cy="537" r="20" fill="rgb(0, 7, 0)"/>
-<text x="412" y="537" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">336497</text>
+<circle cx="412" cy="537" r="4" fill="rgb(0, 7, 0)"/>
 <circle cx="690" cy="806" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="588" cy="549" r="6" fill="rgb(0, 2, 0)"/>
-<text x="588" y="549" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">446775</text>
-<circle cx="487" cy="418" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="588" cy="549" r="3" fill="rgb(0, 2, 0)"/>
+<circle cx="487" cy="418" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="505" cy="659" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="965" cy="306" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="827" cy="776" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="651" cy="374" r="6" fill="rgb(0, 2, 0)"/>
-<text x="651" y="374" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">526018</text>
+<circle cx="651" cy="374" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="815" cy="269" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="112" cy="874" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="509" cy="469" r="20" fill="rgb(0, 7, 0)"/>
-<text x="509" y="469" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">72459</text>
-<circle cx="335" cy="762" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="509" cy="469" r="4" fill="rgb(0, 7, 0)"/>
+<circle cx="335" cy="762" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="504" cy="78" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="228" cy="209" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="671" cy="454" r="3" fill="rgb(0, 0, 0)"/>
@@ -1174,48 +1149,39 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="382" cy="862" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="390" cy="182" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="38" cy="734" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="679" cy="563" r="274" fill="rgb(0, 103, 0)"/>
-<text x="679" y="563" text-anchor="middle" stroke="red" stroke-width="1px" font-size="274" dy=".3em">506956</text>
+<circle cx="679" cy="563" r="61" fill="rgb(0, 103, 0)"/>
+<text x="679" y="563" text-anchor="middle" stroke="red" stroke-width="1px" font-size="61" dy=".3em">506956</text>
 <circle cx="387" cy="76" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="935" cy="322" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="815" cy="238" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="828" cy="266" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="128" cy="220" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="466" cy="494" r="8" fill="rgb(0, 3, 0)"/>
-<text x="466" y="494" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">45</text>
+<circle cx="466" cy="494" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="225" cy="908" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="638" cy="134" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="524" cy="681" r="28" fill="rgb(0, 10, 0)"/>
-<text x="524" y="681" text-anchor="middle" stroke="red" stroke-width="1px" font-size="28" dy=".3em">530689</text>
+<circle cx="524" cy="681" r="6" fill="rgb(0, 10, 0)"/>
+<text x="524" y="681" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">530689</text>
 <circle cx="127" cy="245" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="926" cy="419" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="773" cy="511" r="6" fill="rgb(0, 2, 0)"/>
-<text x="773" y="511" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">86467</text>
+<circle cx="773" cy="511" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="600" cy="405" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="496" cy="93" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="885" cy="487" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="567" cy="326" r="8" fill="rgb(0, 3, 0)"/>
-<text x="567" y="326" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">481296</text>
-<circle cx="385" cy="433" r="10" fill="rgb(0, 3, 0)"/>
-<text x="385" y="433" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">518684</text>
+<circle cx="567" cy="326" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="385" cy="433" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="527" cy="907" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="568" cy="792" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="40" cy="490" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="480" cy="357" r="22" fill="rgb(0, 8, 0)"/>
-<text x="480" y="357" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">28779</text>
+<circle cx="480" cy="357" r="4" fill="rgb(0, 8, 0)"/>
 <circle cx="836" cy="722" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="749" cy="734" r="14" fill="rgb(0, 5, 0)"/>
-<text x="749" y="734" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">515303</text>
+<circle cx="749" cy="734" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="196" cy="108" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="314" cy="648" r="10" fill="rgb(0, 3, 0)"/>
-<text x="314" y="648" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">331354</text>
-<circle cx="204" cy="419" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="314" cy="648" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="204" cy="419" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="157" cy="476" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="672" cy="384" r="6" fill="rgb(0, 2, 0)"/>
-<text x="672" y="384" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">520948</text>
+<circle cx="672" cy="384" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="29" cy="343" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="687" cy="441" r="8" fill="rgb(0, 3, 0)"/>
-<text x="687" y="441" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">65862</text>
+<circle cx="687" cy="441" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="492" cy="79" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="761" cy="625" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="660" cy="626" r="3" fill="rgb(0, 0, 0)"/>
@@ -1225,119 +1191,98 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="167" cy="816" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="412" cy="142" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="671" cy="124" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="437" cy="703" r="4" fill="rgb(0, 1, 0)"/>
-<circle cx="568" cy="322" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="437" cy="703" r="3" fill="rgb(0, 1, 0)"/>
+<circle cx="568" cy="322" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="315" cy="128" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="475" cy="835" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="288" cy="636" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="910" cy="186" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="818" cy="527" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="284" cy="317" r="14" fill="rgb(0, 5, 0)"/>
-<text x="284" y="317" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">40833</text>
-<circle cx="548" cy="291" r="10" fill="rgb(0, 3, 0)"/>
-<text x="548" y="291" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">100323</text>
-<circle cx="512" cy="804" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="284" cy="317" r="3" fill="rgb(0, 5, 0)"/>
+<circle cx="548" cy="291" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="512" cy="804" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="459" cy="21" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="637" cy="596" r="129" fill="rgb(0, 48, 0)"/>
-<text x="637" y="596" text-anchor="middle" stroke="red" stroke-width="1px" font-size="129" dy=".3em">418655</text>
-<circle cx="506" cy="793" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="637" cy="596" r="28" fill="rgb(0, 48, 0)"/>
+<text x="637" y="596" text-anchor="middle" stroke="red" stroke-width="1px" font-size="28" dy=".3em">418655</text>
+<circle cx="506" cy="793" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="108" cy="378" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="468" cy="342" r="6" fill="rgb(0, 2, 0)"/>
-<text x="468" y="342" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">20262</text>
+<circle cx="468" cy="342" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="751" cy="126" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="594" cy="898" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="569" cy="385" r="22" fill="rgb(0, 8, 0)"/>
-<text x="569" y="385" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">484089</text>
+<circle cx="569" cy="385" r="4" fill="rgb(0, 8, 0)"/>
 <circle cx="164" cy="346" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="762" cy="162" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="89" cy="214" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="648" cy="856" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="306" cy="223" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="530" cy="687" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="530" cy="687" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="360" cy="949" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="562" cy="279" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="562" cy="279" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="156" cy="657" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="58" cy="696" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="324" cy="628" r="12" fill="rgb(0, 4, 0)"/>
-<text x="324" y="628" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">10132</text>
+<circle cx="324" cy="628" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="527" cy="394" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="668" cy="378" r="6" fill="rgb(0, 2, 0)"/>
-<text x="668" y="378" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">458896</text>
+<circle cx="668" cy="378" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="462" cy="281" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="260" cy="393" r="8" fill="rgb(0, 3, 0)"/>
-<text x="260" y="393" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">477173</text>
+<circle cx="260" cy="393" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="440" cy="958" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="210" cy="450" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="416" cy="971" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="830" cy="154" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="493" cy="219" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="732" cy="418" r="8" fill="rgb(0, 3, 0)"/>
-<text x="732" y="418" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">487079</text>
+<circle cx="732" cy="418" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="78" cy="764" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="430" cy="513" r="20" fill="rgb(0, 7, 0)"/>
-<text x="430" y="513" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">425599</text>
+<circle cx="430" cy="513" r="4" fill="rgb(0, 7, 0)"/>
 <circle cx="493" cy="52" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="913" cy="266" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="106" cy="292" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="409" cy="507" r="40" fill="rgb(0, 15, 0)"/>
-<text x="409" y="507" text-anchor="middle" stroke="red" stroke-width="1px" font-size="40" dy=".3em">6727</text>
+<circle cx="409" cy="507" r="8" fill="rgb(0, 15, 0)"/>
+<text x="409" y="507" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">6727</text>
 <circle cx="933" cy="642" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="774" cy="696" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="938" cy="638" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="526" cy="375" r="22" fill="rgb(0, 8, 0)"/>
-<text x="526" y="375" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">338157</text>
+<circle cx="526" cy="375" r="4" fill="rgb(0, 8, 0)"/>
 <circle cx="849" cy="895" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="724" cy="566" r="6" fill="rgb(0, 2, 0)"/>
-<text x="724" y="566" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">150812</text>
+<circle cx="724" cy="566" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="947" cy="251" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="918" cy="375" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="419" cy="474" r="101" fill="rgb(0, 38, 0)"/>
-<text x="419" y="474" text-anchor="middle" stroke="red" stroke-width="1px" font-size="101" dy=".3em">300223</text>
+<circle cx="419" cy="474" r="22" fill="rgb(0, 38, 0)"/>
+<text x="419" y="474" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">300223</text>
 <circle cx="816" cy="60" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="401" cy="364" r="34" fill="rgb(0, 13, 0)"/>
-<text x="401" y="364" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">497735</text>
-<circle cx="413" cy="570" r="12" fill="rgb(0, 4, 0)"/>
-<text x="413" y="570" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">307131</text>
+<circle cx="401" cy="364" r="7" fill="rgb(0, 13, 0)"/>
+<text x="401" y="364" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">497735</text>
+<circle cx="413" cy="570" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="180" cy="152" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="677" cy="908" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="627" cy="640" r="8" fill="rgb(0, 3, 0)"/>
-<text x="627" y="640" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">341340</text>
+<circle cx="627" cy="640" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="956" cy="618" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="128" cy="642" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="204" cy="160" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="248" cy="728" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="305" cy="601" r="8" fill="rgb(0, 3, 0)"/>
-<text x="305" y="601" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">361203</text>
+<circle cx="305" cy="601" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="18" cy="481" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="662" cy="747" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="332" cy="609" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="332" cy="609" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="220" cy="250" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="882" cy="368" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="230" cy="231" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="414" cy="66" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="440" cy="404" r="10" fill="rgb(0, 3, 0)"/>
-<text x="440" y="404" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">180049</text>
+<circle cx="440" cy="404" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="231" cy="823" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="362" cy="413" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="362" cy="413" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="756" cy="776" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="408" cy="359" r="6" fill="rgb(0, 2, 0)"/>
-<text x="408" y="359" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">141453</text>
+<circle cx="408" cy="359" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="352" cy="737" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="699" cy="636" r="6" fill="rgb(0, 2, 0)"/>
-<text x="699" y="636" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">123411</text>
+<circle cx="699" cy="636" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="168" cy="613" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="245" cy="190" r="6" fill="rgb(0, 2, 0)"/>
-<text x="245" y="190" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">56606</text>
+<circle cx="245" cy="190" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="730" cy="157" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="541" cy="528" r="24" fill="rgb(0, 9, 0)"/>
-<text x="541" y="528" text-anchor="middle" stroke="red" stroke-width="1px" font-size="24" dy=".3em">177691</text>
+<circle cx="541" cy="528" r="5" fill="rgb(0, 9, 0)"/>
 <circle cx="568" cy="73" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="673" cy="472" r="8" fill="rgb(0, 3, 0)"/>
-<text x="673" y="472" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">540569</text>
-<circle cx="372" cy="405" r="6" fill="rgb(0, 2, 0)"/>
-<text x="372" y="405" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">313424</text>
+<circle cx="673" cy="472" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="372" cy="405" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="858" cy="211" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="381" cy="441" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="381" cy="441" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="287" cy="225" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="946" cy="311" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="664" cy="226" r="3" fill="rgb(0, 0, 0)"/>
@@ -1353,75 +1298,64 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="147" cy="546" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="971" cy="628" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="154" cy="872" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="599" cy="422" r="34" fill="rgb(0, 12, 0)"/>
-<text x="599" y="422" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">154012</text>
+<circle cx="599" cy="422" r="7" fill="rgb(0, 12, 0)"/>
+<text x="599" y="422" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">154012</text>
 <circle cx="233" cy="573" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="196" cy="305" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="660" cy="383" r="12" fill="rgb(0, 4, 0)"/>
-<text x="660" y="383" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">474788</text>
+<circle cx="660" cy="383" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="244" cy="59" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="347" cy="624" r="8" fill="rgb(0, 3, 0)"/>
-<text x="347" y="624" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">289372</text>
-<circle cx="508" cy="324" r="14" fill="rgb(0, 5, 0)"/>
-<text x="508" y="324" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">238364</text>
-<circle cx="599" cy="476" r="12" fill="rgb(0, 4, 0)"/>
-<text x="599" y="476" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">258611</text>
+<circle cx="347" cy="624" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="508" cy="324" r="3" fill="rgb(0, 5, 0)"/>
+<circle cx="599" cy="476" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="316" cy="67" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="405" cy="261" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="213" cy="822" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="727" cy="652" r="32" fill="rgb(0, 12, 0)"/>
-<text x="727" y="652" text-anchor="middle" stroke="red" stroke-width="1px" font-size="32" dy=".3em">488904</text>
+<circle cx="727" cy="652" r="7" fill="rgb(0, 12, 0)"/>
+<text x="727" y="652" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">488904</text>
 <circle cx="913" cy="292" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="748" cy="113" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="852" cy="209" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="589" cy="357" r="62" fill="rgb(0, 23, 0)"/>
-<text x="589" y="357" text-anchor="middle" stroke="red" stroke-width="1px" font-size="62" dy=".3em">473106</text>
+<circle cx="589" cy="357" r="13" fill="rgb(0, 23, 0)"/>
+<text x="589" y="357" text-anchor="middle" stroke="red" stroke-width="1px" font-size="13" dy=".3em">473106</text>
 <circle cx="480" cy="67" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="413" cy="416" r="70" fill="rgb(0, 26, 0)"/>
-<text x="413" y="416" text-anchor="middle" stroke="red" stroke-width="1px" font-size="70" dy=".3em">396881</text>
+<circle cx="413" cy="416" r="15" fill="rgb(0, 26, 0)"/>
+<text x="413" y="416" text-anchor="middle" stroke="red" stroke-width="1px" font-size="15" dy=".3em">396881</text>
 <circle cx="912" cy="312" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="125" cy="266" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="622" cy="689" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="622" cy="689" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="382" cy="489" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="575" cy="983" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="250" cy="88" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="264" cy="353" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="605" cy="531" r="12" fill="rgb(0, 4, 0)"/>
-<text x="605" y="531" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">499502</text>
+<circle cx="605" cy="531" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="59" cy="688" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="514" cy="440" r="61" fill="rgb(0, 23, 0)"/>
-<text x="514" y="440" text-anchor="middle" stroke="red" stroke-width="1px" font-size="61" dy=".3em">279158</text>
+<circle cx="514" cy="440" r="13" fill="rgb(0, 23, 0)"/>
+<text x="514" y="440" text-anchor="middle" stroke="red" stroke-width="1px" font-size="13" dy=".3em">279158</text>
 <circle cx="194" cy="837" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="638" cy="656" r="42" fill="rgb(0, 16, 0)"/>
-<text x="638" y="656" text-anchor="middle" stroke="red" stroke-width="1px" font-size="42" dy=".3em">143426</text>
+<circle cx="638" cy="656" r="9" fill="rgb(0, 16, 0)"/>
+<text x="638" y="656" text-anchor="middle" stroke="red" stroke-width="1px" font-size="9" dy=".3em">143426</text>
 <circle cx="754" cy="651" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="281" cy="71" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="209" cy="688" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="522" cy="334" r="6" fill="rgb(0, 2, 0)"/>
-<text x="522" y="334" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">81116</text>
-<circle cx="336" cy="516" r="6" fill="rgb(0, 2, 0)"/>
-<text x="336" y="516" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">423826</text>
+<circle cx="522" cy="334" r="3" fill="rgb(0, 2, 0)"/>
+<circle cx="336" cy="516" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="703" cy="49" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="438" cy="387" r="14" fill="rgb(0, 5, 0)"/>
-<text x="438" y="387" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">246711</text>
+<circle cx="438" cy="387" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="99" cy="459" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="843" cy="867" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="445" cy="123" r="8" fill="rgb(0, 3, 0)"/>
-<text x="445" y="123" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">64537</text>
+<circle cx="445" cy="123" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="354" cy="82" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="606" cy="92" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="83" cy="455" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="424" cy="528" r="10" fill="rgb(0, 3, 0)"/>
-<text x="424" y="528" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">457330</text>
-<circle cx="640" cy="790" r="18" fill="rgb(0, 6, 0)"/>
-<text x="640" y="790" text-anchor="middle" stroke="red" stroke-width="1px" font-size="18" dy=".3em">477180</text>
-<circle cx="407" cy="199" r="34" fill="rgb(0, 12, 0)"/>
-<text x="407" y="199" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">50528</text>
+<circle cx="424" cy="528" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="640" cy="790" r="4" fill="rgb(0, 6, 0)"/>
+<circle cx="407" cy="199" r="7" fill="rgb(0, 12, 0)"/>
+<text x="407" y="199" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">50528</text>
 <circle cx="965" cy="653" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="174" cy="478" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="94" cy="231" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="269" cy="591" r="95" fill="rgb(0, 36, 0)"/>
-<text x="269" y="591" text-anchor="middle" stroke="red" stroke-width="1px" font-size="95" dy=".3em">35594</text>
+<circle cx="269" cy="591" r="21" fill="rgb(0, 36, 0)"/>
+<text x="269" y="591" text-anchor="middle" stroke="red" stroke-width="1px" font-size="21" dy=".3em">35594</text>
 <circle cx="961" cy="589" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="412" cy="957" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="319" cy="40" r="3" fill="rgb(0, 0, 0)"/>
@@ -1431,55 +1365,48 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="869" cy="287" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="780" cy="669" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="21" cy="408" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="547" cy="470" r="84" fill="rgb(0, 31, 0)"/>
-<text x="547" y="470" text-anchor="middle" stroke="red" stroke-width="1px" font-size="84" dy=".3em">538583</text>
-<circle cx="423" cy="610" r="60" fill="rgb(0, 22, 0)"/>
-<text x="423" y="610" text-anchor="middle" stroke="red" stroke-width="1px" font-size="60" dy=".3em">67344</text>
+<circle cx="547" cy="470" r="18" fill="rgb(0, 31, 0)"/>
+<text x="547" y="470" text-anchor="middle" stroke="red" stroke-width="1px" font-size="18" dy=".3em">538583</text>
+<circle cx="423" cy="610" r="13" fill="rgb(0, 22, 0)"/>
+<text x="423" y="610" text-anchor="middle" stroke="red" stroke-width="1px" font-size="13" dy=".3em">67344</text>
 <circle cx="751" cy="841" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="319" cy="470" r="10" fill="rgb(0, 3, 0)"/>
-<text x="319" y="470" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">403634</text>
+<circle cx="319" cy="470" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="613" cy="172" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="455" cy="712" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="455" cy="712" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="546" cy="857" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="630" cy="765" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="480" cy="106" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="782" cy="665" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="448" cy="284" r="14" fill="rgb(0, 5, 0)"/>
-<text x="448" y="284" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">180304</text>
+<circle cx="448" cy="284" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="70" cy="625" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="141" cy="861" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="62" cy="208" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="541" cy="747" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="402" cy="108" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="337" cy="480" r="12" fill="rgb(0, 4, 0)"/>
-<text x="337" y="480" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">407769</text>
-<circle cx="443" cy="641" r="229" fill="rgb(0, 86, 0)"/>
-<text x="443" y="641" text-anchor="middle" stroke="red" stroke-width="1px" font-size="229" dy=".3em">100000</text>
+<circle cx="337" cy="480" r="3" fill="rgb(0, 4, 0)"/>
+<circle cx="443" cy="641" r="51" fill="rgb(0, 86, 0)"/>
+<text x="443" y="641" text-anchor="middle" stroke="red" stroke-width="1px" font-size="51" dy=".3em">100000</text>
 <circle cx="331" cy="839" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="679" cy="136" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="90" cy="724" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="826" cy="415" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="128" cy="564" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="455" cy="159" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="679" cy="461" r="32" fill="rgb(0, 12, 0)"/>
-<text x="679" y="461" text-anchor="middle" stroke="red" stroke-width="1px" font-size="32" dy=".3em">49426</text>
-<circle cx="585" cy="340" r="113" fill="rgb(0, 42, 0)"/>
-<text x="585" y="340" text-anchor="middle" stroke="red" stroke-width="1px" font-size="113" dy=".3em">193198</text>
-<circle cx="590" cy="386" r="24" fill="rgb(0, 9, 0)"/>
-<text x="590" y="386" text-anchor="middle" stroke="red" stroke-width="1px" font-size="24" dy=".3em">98712</text>
+<circle cx="679" cy="461" r="7" fill="rgb(0, 12, 0)"/>
+<text x="679" y="461" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">49426</text>
+<circle cx="585" cy="340" r="25" fill="rgb(0, 42, 0)"/>
+<text x="585" y="340" text-anchor="middle" stroke="red" stroke-width="1px" font-size="25" dy=".3em">193198</text>
+<circle cx="590" cy="386" r="5" fill="rgb(0, 9, 0)"/>
 <circle cx="19" cy="518" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="684" cy="582" r="10" fill="rgb(0, 3, 0)"/>
-<text x="684" y="582" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">68170</text>
-<circle cx="782" cy="454" r="20" fill="rgb(0, 7, 0)"/>
-<text x="782" y="454" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">470183</text>
-<circle cx="313" cy="368" r="14" fill="rgb(0, 5, 0)"/>
-<text x="313" y="368" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">404032</text>
+<circle cx="684" cy="582" r="3" fill="rgb(0, 3, 0)"/>
+<circle cx="782" cy="454" r="4" fill="rgb(0, 7, 0)"/>
+<circle cx="313" cy="368" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="199" cy="692" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="203" cy="554" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="383" cy="55" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="548" cy="143" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="551" cy="519" r="71" fill="rgb(0, 27, 0)"/>
-<text x="551" y="519" text-anchor="middle" stroke="red" stroke-width="1px" font-size="71" dy=".3em">3604</text>
+<circle cx="551" cy="519" r="15" fill="rgb(0, 27, 0)"/>
+<text x="551" y="519" text-anchor="middle" stroke="red" stroke-width="1px" font-size="15" dy=".3em">3604</text>
 <circle cx="820" cy="212" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="877" cy="560" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="505" cy="904" r="3" fill="rgb(0, 0, 0)"/>
@@ -1493,48 +1420,42 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="195" cy="893" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="712" cy="924" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="226" cy="733" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="295" cy="529" r="14" fill="rgb(0, 5, 0)"/>
-<text x="295" y="529" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">370420</text>
+<circle cx="295" cy="529" r="3" fill="rgb(0, 5, 0)"/>
 <circle cx="905" cy="437" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="415" cy="445" r="12" fill="rgb(0, 4, 0)"/>
-<text x="415" y="445" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">299357</text>
-<circle cx="526" cy="410" r="30" fill="rgb(0, 11, 0)"/>
-<text x="526" y="410" text-anchor="middle" stroke="red" stroke-width="1px" font-size="30" dy=".3em">476066</text>
+<circle cx="415" cy="445" r="3" fill="rgb(0, 4, 0)"/>
+<circle cx="526" cy="410" r="6" fill="rgb(0, 11, 0)"/>
+<text x="526" y="410" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">476066</text>
 <circle cx="605" cy="219" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="539" cy="166" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="428" cy="619" r="6" fill="rgb(0, 2, 0)"/>
-<text x="428" y="619" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">495043</text>
+<circle cx="428" cy="619" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="643" cy="916" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="847" cy="758" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="762" cy="281" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="154" cy="613" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="972" cy="638" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="596" cy="586" r="38" fill="rgb(0, 14, 0)"/>
-<text x="596" y="586" text-anchor="middle" stroke="red" stroke-width="1px" font-size="38" dy=".3em">388082</text>
-<circle cx="610" cy="587" r="12" fill="rgb(0, 4, 0)"/>
-<text x="610" y="587" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">422621</text>
-<circle cx="456" cy="475" r="34" fill="rgb(0, 13, 0)"/>
-<text x="456" y="475" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">503703</text>
-<circle cx="345" cy="454" r="65" fill="rgb(0, 24, 0)"/>
-<text x="345" y="454" text-anchor="middle" stroke="red" stroke-width="1px" font-size="65" dy=".3em">179751</text>
-<circle cx="390" cy="273" r="4" fill="rgb(0, 1, 0)"/>
+<circle cx="596" cy="586" r="8" fill="rgb(0, 14, 0)"/>
+<text x="596" y="586" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">388082</text>
+<circle cx="610" cy="587" r="3" fill="rgb(0, 4, 0)"/>
+<circle cx="456" cy="475" r="7" fill="rgb(0, 13, 0)"/>
+<text x="456" y="475" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">503703</text>
+<circle cx="345" cy="454" r="14" fill="rgb(0, 24, 0)"/>
+<text x="345" y="454" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">179751</text>
+<circle cx="390" cy="273" r="3" fill="rgb(0, 1, 0)"/>
 <circle cx="959" cy="310" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="113" cy="654" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="579" cy="772" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="313" cy="692" r="243" fill="rgb(0, 91, 0)"/>
-<text x="313" y="692" text-anchor="middle" stroke="red" stroke-width="1px" font-size="243" dy=".3em">364286</text>
-<circle cx="422" cy="582" r="97" fill="rgb(0, 36, 0)"/>
-<text x="422" y="582" text-anchor="middle" stroke="red" stroke-width="1px" font-size="97" dy=".3em">538829</text>
+<circle cx="313" cy="692" r="54" fill="rgb(0, 91, 0)"/>
+<text x="313" y="692" text-anchor="middle" stroke="red" stroke-width="1px" font-size="54" dy=".3em">364286</text>
+<circle cx="422" cy="582" r="21" fill="rgb(0, 36, 0)"/>
+<text x="422" y="582" text-anchor="middle" stroke="red" stroke-width="1px" font-size="21" dy=".3em">538829</text>
 <circle cx="777" cy="138" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="268" cy="827" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="122" cy="804" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="977" cy="378" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="583" cy="513" r="177" fill="rgb(0, 67, 0)"/>
-<text x="583" y="513" text-anchor="middle" stroke="red" stroke-width="1px" font-size="177" dy=".3em">108576</text>
-<circle cx="731" cy="464" r="6" fill="rgb(0, 2, 0)"/>
-<text x="731" y="464" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">478020</text>
-<circle cx="340" cy="388" r="20" fill="rgb(0, 7, 0)"/>
-<text x="340" y="388" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">20192</text>
+<circle cx="583" cy="513" r="39" fill="rgb(0, 67, 0)"/>
+<text x="583" y="513" text-anchor="middle" stroke="red" stroke-width="1px" font-size="39" dy=".3em">108576</text>
+<circle cx="731" cy="464" r="3" fill="rgb(0, 2, 0)"/>
+<circle cx="340" cy="388" r="4" fill="rgb(0, 7, 0)"/>
 <circle cx="530" cy="202" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="471" cy="959" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="905" cy="435" r="3" fill="rgb(0, 0, 0)"/>
@@ -1544,38 +1465,36 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="38" cy="328" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="106" cy="258" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="116" cy="249" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="471" cy="626" r="30" fill="rgb(0, 11, 0)"/>
-<text x="471" y="626" text-anchor="middle" stroke="red" stroke-width="1px" font-size="30" dy=".3em">329559</text>
+<circle cx="471" cy="626" r="6" fill="rgb(0, 11, 0)"/>
+<text x="471" y="626" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">329559</text>
 <circle cx="916" cy="592" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="592" cy="536" r="46" fill="rgb(0, 17, 0)"/>
-<text x="592" y="536" text-anchor="middle" stroke="red" stroke-width="1px" font-size="46" dy=".3em">333658</text>
+<circle cx="592" cy="536" r="10" fill="rgb(0, 17, 0)"/>
+<text x="592" y="536" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">333658</text>
 <circle cx="509" cy="861" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="768" cy="538" r="10" fill="rgb(0, 3, 0)"/>
-<text x="768" y="538" text-anchor="middle" stroke="red" stroke-width="1px" font-size="10" dy=".3em">115129</text>
+<circle cx="768" cy="538" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="73" cy="511" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="960" cy="460" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="199" cy="653" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="52" cy="452" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="304" cy="441" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="513" cy="457" r="30" fill="rgb(0, 11, 0)"/>
-<text x="513" y="457" text-anchor="middle" stroke="red" stroke-width="1px" font-size="30" dy=".3em">380984</text>
+<circle cx="513" cy="457" r="6" fill="rgb(0, 11, 0)"/>
+<text x="513" y="457" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">380984</text>
 <circle cx="147" cy="178" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="239" cy="311" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="348" cy="448" r="38" fill="rgb(0, 14, 0)"/>
-<text x="348" y="448" text-anchor="middle" stroke="red" stroke-width="1px" font-size="38" dy=".3em">94676</text>
+<circle cx="348" cy="448" r="8" fill="rgb(0, 14, 0)"/>
+<text x="348" y="448" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">94676</text>
 <circle cx="357" cy="856" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="579" cy="318" r="54" fill="rgb(0, 20, 0)"/>
-<text x="579" y="318" text-anchor="middle" stroke="red" stroke-width="1px" font-size="54" dy=".3em">342241</text>
+<circle cx="579" cy="318" r="12" fill="rgb(0, 20, 0)"/>
+<text x="579" y="318" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">342241</text>
 <circle cx="337" cy="798" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="232" cy="490" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="397" cy="142" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="158" cy="869" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="480" cy="554" r="8" fill="rgb(0, 3, 0)"/>
-<text x="480" y="554" text-anchor="middle" stroke="red" stroke-width="1px" font-size="8" dy=".3em">32841</text>
+<circle cx="480" cy="554" r="3" fill="rgb(0, 3, 0)"/>
 <circle cx="621" cy="833" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="675" cy="631" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="692" cy="569" r="143" fill="rgb(0, 54, 0)"/>
-<text x="692" y="569" text-anchor="middle" stroke="red" stroke-width="1px" font-size="143" dy=".3em">93188</text>
+<circle cx="692" cy="569" r="31" fill="rgb(0, 54, 0)"/>
+<text x="692" y="569" text-anchor="middle" stroke="red" stroke-width="1px" font-size="31" dy=".3em">93188</text>
 <circle cx="797" cy="258" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="249" cy="156" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="150" cy="838" r="3" fill="rgb(0, 0, 0)"/>
@@ -1584,57 +1503,47 @@ xmlns="http://www.w3.org/2000/svg">
 <circle cx="937" cy="619" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="201" cy="894" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="966" cy="622" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="701" cy="351" r="22" fill="rgb(0, 8, 0)"/>
-<text x="701" y="351" text-anchor="middle" stroke="red" stroke-width="1px" font-size="22" dy=".3em">415700</text>
-<circle cx="586" cy="667" r="24" fill="rgb(0, 9, 0)"/>
-<text x="586" y="667" text-anchor="middle" stroke="red" stroke-width="1px" font-size="24" dy=".3em">227739</text>
-<circle cx="325" cy="444" r="34" fill="rgb(0, 13, 0)"/>
-<text x="325" y="444" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">37576</text>
+<circle cx="701" cy="351" r="4" fill="rgb(0, 8, 0)"/>
+<circle cx="586" cy="667" r="5" fill="rgb(0, 9, 0)"/>
+<circle cx="325" cy="444" r="7" fill="rgb(0, 13, 0)"/>
+<text x="325" y="444" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">37576</text>
 <circle cx="983" cy="529" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="850" cy="614" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="171" cy="438" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="542" cy="855" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="209" cy="328" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="453" cy="319" r="6" fill="rgb(0, 2, 0)"/>
-<text x="453" y="319" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">540</text>
-<circle cx="326" cy="563" r="12" fill="rgb(0, 4, 0)"/>
-<text x="326" y="563" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">313462</text>
+<circle cx="453" cy="319" r="3" fill="rgb(0, 2, 0)"/>
+<circle cx="326" cy="563" r="3" fill="rgb(0, 4, 0)"/>
 <circle cx="944" cy="475" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="68" cy="434" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="170" cy="235" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="496" cy="436" r="34" fill="rgb(0, 13, 0)"/>
-<text x="496" y="436" text-anchor="middle" stroke="red" stroke-width="1px" font-size="34" dy=".3em">442561</text>
+<circle cx="496" cy="436" r="7" fill="rgb(0, 13, 0)"/>
+<text x="496" y="436" text-anchor="middle" stroke="red" stroke-width="1px" font-size="7" dy=".3em">442561</text>
 <circle cx="197" cy="763" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="192" cy="752" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="158" cy="363" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="34" cy="497" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="590" cy="352" r="6" fill="rgb(0, 2, 0)"/>
-<text x="590" y="352" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">166134</text>
-<circle cx="305" cy="626" r="4" fill="rgb(0, 1, 0)"/>
-<circle cx="643" cy="393" r="20" fill="rgb(0, 7, 0)"/>
-<text x="643" y="393" text-anchor="middle" stroke="red" stroke-width="1px" font-size="20" dy=".3em">238630</text>
-<circle cx="590" cy="666" r="16" fill="rgb(0, 6, 0)"/>
-<text x="590" y="666" text-anchor="middle" stroke="red" stroke-width="1px" font-size="16" dy=".3em">18906</text>
-<circle cx="401" cy="460" r="125" fill="rgb(0, 47, 0)"/>
-<text x="401" y="460" text-anchor="middle" stroke="red" stroke-width="1px" font-size="125" dy=".3em">98640</text>
-<circle cx="534" cy="536" r="18" fill="rgb(0, 6, 0)"/>
-<text x="534" y="536" text-anchor="middle" stroke="red" stroke-width="1px" font-size="18" dy=".3em">54791</text>
-<circle cx="816" cy="492" r="6" fill="rgb(0, 2, 0)"/>
-<text x="816" y="492" text-anchor="middle" stroke="red" stroke-width="1px" font-size="6" dy=".3em">535898</text>
+<circle cx="590" cy="352" r="3" fill="rgb(0, 2, 0)"/>
+<circle cx="305" cy="626" r="3" fill="rgb(0, 1, 0)"/>
+<circle cx="643" cy="393" r="4" fill="rgb(0, 7, 0)"/>
+<circle cx="590" cy="666" r="3" fill="rgb(0, 6, 0)"/>
+<circle cx="401" cy="460" r="27" fill="rgb(0, 47, 0)"/>
+<text x="401" y="460" text-anchor="middle" stroke="red" stroke-width="1px" font-size="27" dy=".3em">98640</text>
+<circle cx="534" cy="536" r="4" fill="rgb(0, 6, 0)"/>
+<circle cx="816" cy="492" r="3" fill="rgb(0, 2, 0)"/>
 <circle cx="98" cy="759" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="79" cy="594" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="370" cy="753" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="914" cy="267" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="509" cy="488" r="16" fill="rgb(0, 6, 0)"/>
-<text x="509" y="488" text-anchor="middle" stroke="red" stroke-width="1px" font-size="16" dy=".3em">478825</text>
-<circle cx="289" cy="706" r="63" fill="rgb(0, 23, 0)"/>
-<text x="289" y="706" text-anchor="middle" stroke="red" stroke-width="1px" font-size="63" dy=".3em">494988</text>
+<circle cx="509" cy="488" r="3" fill="rgb(0, 6, 0)"/>
+<circle cx="289" cy="706" r="14" fill="rgb(0, 23, 0)"/>
+<text x="289" y="706" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">494988</text>
 <circle cx="367" cy="901" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="364" cy="73" r="3" fill="rgb(0, 0, 0)"/>
-<circle cx="548" cy="604" r="67" fill="rgb(0, 25, 0)"/>
-<text x="548" y="604" text-anchor="middle" stroke="red" stroke-width="1px" font-size="67" dy=".3em">184663</text>
-<circle cx="407" cy="497" r="55" fill="rgb(0, 21, 0)"/>
-<text x="407" y="497" text-anchor="middle" stroke="red" stroke-width="1px" font-size="55" dy=".3em">369381</text>
+<circle cx="548" cy="604" r="14" fill="rgb(0, 25, 0)"/>
+<text x="548" y="604" text-anchor="middle" stroke="red" stroke-width="1px" font-size="14" dy=".3em">184663</text>
+<circle cx="407" cy="497" r="12" fill="rgb(0, 21, 0)"/>
+<text x="407" y="497" text-anchor="middle" stroke="red" stroke-width="1px" font-size="12" dy=".3em">369381</text>
 <circle cx="135" cy="141" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="64" cy="374" r="3" fill="rgb(0, 0, 0)"/>
 <circle cx="272" cy="887" r="3" fill="rgb(0, 0, 0)"/>

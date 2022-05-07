@@ -226,7 +226,7 @@ void Graph::normalize_bc() {
             }
         }
         for (auto n : adj_list) {
-            n.second->centrality = (n.second->centrality - min) * ( (float) (adj_list.size() * 0.9)/(max - min));
+            n.second->centrality = (n.second->centrality - min) * ( (float) (adj_list.size() / 5)/(max - min));
             n.second->color = (n.second->color - min) * ( (float) 255/(max - min));
             
         }
