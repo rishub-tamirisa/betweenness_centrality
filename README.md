@@ -62,7 +62,7 @@ Run the contents of `main.cpp` by executing `./graph` in the command line follow
 Example usage is `./graph "225FPDataset/com-amazon-reduced.ungraph.txt" "225FPDataset/amazon-meta-reduced.txt" "" 100000 500 10 500 500 1 40475`. <br>
 This would run betweenness centrality and force directed graph drawing on a subgraph with `500` nodes starting at the node with ID `100000`. Betweenness centrality will return the top `10` central nodes. The size of the graph output frame will be `500` x `500` pixels. A shortest path will be printed from the node with ID `1` to the node with ID `40475`. The input file dataset is located at `225FPDataset/com-amazon-reduced.ungraph.txt` and the labels were provided at `225FPDataset/amazon-meta-reduced.txt`. Because no `output loc` was specified, the graph drawing `SVG` output will be in the general project directory.
 
-## Important Notes:
+## How to view the Graph Drawing Output:
 To view the graph drawing output, an `SVG` renderer must be used. The easiest method is to open the `SVG` file in a standard internet browser.
 * SVG was used because it is a human-readable image format that supports vector graphics, and requires no external libraries. The image can be viewed natively in Github or by opening the image from its file location in a default internet browser (Google Chrome, etc.)
 ### Workflow
