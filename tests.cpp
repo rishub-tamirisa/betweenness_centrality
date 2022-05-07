@@ -228,6 +228,12 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       REQUIRE(subgraph.getAdjList().size() == 300);
       REQUIRE(BC.size() == 5);
    }
+   
+   SECTION("Dataset subset Graph Draw", "[full][draw]") {
+      Graph subgraph = graph.connected_subgraph(100000, 750);
+      std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
+      REQUIRE_NOTHROW(subgraph.draw_graph("", 1000, 1000, true));
+   }
 
    SECTION("BFS on Graph", "[full][BFS]") {
       std::vector<int> path = graph.BFS(1, 404753);
