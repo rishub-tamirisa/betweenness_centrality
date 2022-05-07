@@ -179,7 +179,6 @@ TEST_CASE("Graph Betweenness Centrality", "[graph][BC]") {
    Graph graph;
    NodeReader reader("225FPDataset/test.txt");
    reader.readInEdgeList(graph);
-   Graph subgraph = graph.connected_subgraph(1, 7);
 
    std::vector<std::pair<int, float>> BC = graph.betweenness_centrality(5);
    
@@ -227,6 +226,12 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       REQUIRE(BC[2].first == 364286);
       REQUIRE(subgraph.getAdjList().size() == 300);
       REQUIRE(BC.size() == 5);
+   }
+   
+   SECTION("Dataset subset Graph Draw", "[full][draw]") {
+      Graph subgraph = graph.connected_subgraph(100000, 750);
+      std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
+      REQUIRE_NOTHROW(subgraph.draw_graph("", 1000, 1000, true));
    }
 
    SECTION("BFS on Graph", "[full][BFS]") {
