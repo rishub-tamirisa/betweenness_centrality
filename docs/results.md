@@ -1,6 +1,6 @@
 # Written Report
 
-## BFS Traversal <br>
+
 
 
 ## Betweenness Centrality (Brandes Algorithm) <br>
@@ -25,7 +25,8 @@ In terms of the full scale project, it is run as the graph visualizer in our `ma
 The example with starting node at 100000, a size of 500, betweenness centrality of 10, dimensions 1000 x 1000, and BFS starting node/ending node of 1 and 404753 can be seen here: ![Final Graph](Final1.png) <br>
 The larger green circles represent the most frequently visited product nodes, which are also listed in the Betweenness Centrality section. The node values can also be toggled on and off in the input statement (toggled off here for visualization). <br>
 
-##BFS Implementation
+## BFS Traversal <br>
+
 We have a standalone implementation of the BFS that we use in the shortest path between 2 given nodes. Its a simple traversal algorithm that provides the output node ID values. <br> 
 
 We have much more interesting implementations of our BFS algorithms within our `Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, std::unordered_map<int, int>& sigma, std::stack<int>& stack)` function and `connected_subgraph(int root, int size)` algorithms. <br>
