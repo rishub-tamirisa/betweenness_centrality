@@ -20,6 +20,7 @@ Highlighting our function, we have several key pieces of the algorithm broken up
 - `init_pos(int width, int height)`:  Initializes the position of vertex positions randomly within frame <br>
 - `set_dims(int& width, int& height)`: Scales the SVG output to fit the max height and width from the Fruchterman-Reingold algorithm and readjusts vertexes to stay inbounds <br>
 - `draw_graph(std::string loc, int width, int height, bool ID)`: Creates the SVG file with the location, and draws the output with corresponding betweenness-centrality based output color-coding <br>
+- SVG was used because it is a human-readable image format that supports vector graphics, and requires no external libraries. The image can be viewed natively in Github or by opening the image from its file location in a default internet browser (Google Chrome, etc.)
 
 In terms of the full scale project, it is run as the graph visualizer in our `main.cpp` file. To ensure this function properly worked, multiple edge test cases were run to ensure it could create the full graph with different starting nodes, sizes, and dimensions. <br>
 The example with starting node at 100000, a size of 500, betweenness centrality of 10, dimensions 1000 x 1000, and BFS starting node/ending node of 1 and 404753 can be seen here: ![Final Graph](/Final1.png) <br>
