@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include <sstream>
 #include <vector>
 #include "graph.h"
 #include "NodeReader.h"
@@ -194,8 +195,7 @@ TEST_CASE("Graph Draw", "[graph][draw]") {
    reader.readInEdgeList(graph);
 
    graph.betweenness_centrality(1);
-   REQUIRE_NOTHROW(graph.draw_graph("test_output", 1000, 1000, true));
-   
+   REQUIRE_NOTHROW(graph.draw_graph("test_output", 300, 300, true));
 }
 
 TEST_CASE("Reads In Full Data", "[.][full]") {
@@ -238,6 +238,15 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
       std::vector<int> path = graph.BFS(1, 404753);
       std::vector<int> correct = {1, 346495, 143523, 282951, 246278, 211432, 24849, 205174, 516401, 166838, 329844, 81706, 455139, 450413, 404753};
       REQUIRE(match_vec(path, correct));
+
+      std::vector<int> test1 = graph.BFS(18, 42);
+      std::vector<int> correct1 = {18, 41174, 249352, 222961, 189127, 259589, 5899, 241909, 480373, 405820, 352370, 272457, 482159, 532830, 54924, 38007, 42};
+      REQUIRE(match_vec(test1, correct1));
+
+      std::vector<int> test2 = graph.BFS(59, 129548);
+      std::vector<int> correct2 = {59, 531181, 96590, 135335, 186376, 547841, 46869, 356900, 87497, 87494, 450948, 292846, 129548};
+      REQUIRE(match_vec(test2, correct2));
+
    }
 }
 
