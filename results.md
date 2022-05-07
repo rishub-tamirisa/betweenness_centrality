@@ -6,11 +6,13 @@
 ## Betweenness Centrality (Brandes Algorithm) <br>
 This algorithm measures the centrality of a node in a graph based on the unweighted shortest path options. It is run in O(VE) time and uses O(V+E) space complexity, which is better than our anticipated O(V^2) space complexity. Finding the Centrality of this algorithm also uses a breadth-first-search to find the shortest paths for each of the nodes to other nodes in our list, and stores it in an adjacency list.<br>
 
-Our main algorithm 'betweenness_centrality(int k)' employs 'Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, std::unordered_map<int, int>& sigma, std::stack<int>& stack)' to find shortest paths for all the nodes and stores it. This is an implementation of BFS apart from the main standalone algorithm. We needed this to be done in order to significantly clean up the code for Brandes, and act as an effective re-implementation of the BFS at the same time <br>
+Our main algorithm `betweenness_centrality(int k)` employs `Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& pred, std::unordered_map<int, int>& sigma, std::stack<int>& stack)` to find shortest paths for all the nodes and stores it. This is an implementation of BFS apart from the main standalone algorithm. We needed this to be done in order to significantly clean up the code for Brandes, and act as an effective re-implementation of the BFS at the same time <br>
  
-
+We followed the Brandes algorithm from the original paper from its pseudocode to generate our own implementation of it.
 
 We utilized a series of test cases starting at different nodes of different sizes to ensure this algorithm worked properly. When run with the full file, this returns the top 10 list of most common product nodes, their titles, and centralities within the subgraph of the chosen starting and ending nodes. Here is an example using starting node 1 and ending node 404753: ![Betweenness Centrality Example](BC.png)<br>
+
+
 
 
 ## Force Directed Graph Drawing (Fruchterman - Reingold Representation) <br>
