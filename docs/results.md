@@ -33,7 +33,7 @@ We have much more interesting implementations of our BFS algorithms within our `
 
 The Brandes BFS Helper function is very useful for the Brandes Implementation in that finds the shortest paths for a node to every other node in list of paths. <br>
 
-The Connected Subgraph algorithm takes into account that it is a completely connected graph and outputs a connected subgraph of the main graph given a node and the size of the nodes we want in the subgraph. This runs in O(V + E) and runs BFS to find the shortest paths to go from the given node to all the other nodes within the size that we ask of it. 
+The Connected Subgraph algorithm takes into account that it is a completely connected graph and outputs a connected subgraph of the main graph given a node and the size of the nodes we want in the subgraph. This runs in O(V + E) and runs BFS to find the shortest paths to go from the given node to all the other nodes within the size that we ask of it. Here is an output of BFS on one of our cases: ![BFS Output](/BFS.png) <br>
 
 
 ## Answer to Leading Question <br>
