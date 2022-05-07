@@ -9,7 +9,6 @@
 bool match_vec(std::vector<int>& first, std::vector<int>& second) {
    for (unsigned i = 0; i < first.size(); i++) {
       if (i >= second.size() || first[i] != second[i]) {
-         // std::cout << first[i] << " " << second[i] << std::endl;
          return false;
       }
    }
@@ -168,31 +167,35 @@ TEST_CASE("Graph BFS Correctness", "[graph][BFS]") {
 
 }
 
-TEST_CASE("Graph Betweenness Centrality", "[graph][algorithm]") {
+TEST_CASE("Graph Connected Subgraph", "[graph][BFS]") {
    Graph graph;
    NodeReader reader("225FPDataset/test.txt");
    reader.readInEdgeList(graph);
-
-   Graph subgraph = graph.connected_subgraph(1, 7, false);
+   Graph subgraph = graph.connected_subgraph(1, 7);
    REQUIRE(subgraph.getAdjList().size() == 7);
+}
+
+TEST_CASE("Graph Betweenness Centrality", "[graph][BC]") {
+   Graph graph;
+   NodeReader reader("225FPDataset/test.txt");
+   reader.readInEdgeList(graph);
+   Graph subgraph = graph.connected_subgraph(1, 7);
 
    std::vector<std::pair<int, float>> BC = graph.betweenness_centrality(5);
-   for (auto pair : BC) {
-      std::cout << "Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
-   }
+   
    REQUIRE(BC[0].first == 1);
    REQUIRE(BC[1].first == 8);
    REQUIRE(BC[2].first == 5);
-   
 }
+
 
 TEST_CASE("Graph Draw", "[graph][draw]") {
    Graph graph;
    NodeReader reader("225FPDataset/test.txt");
    reader.readInEdgeList(graph);
 
-   graph.betweenness_centrality(1); //calculate sizes
-   REQUIRE_NOTHROW(graph.draw_graph(1000, 1000, true));
+   graph.betweenness_centrality(1);
+   REQUIRE_NOTHROW(graph.draw_graph("", 1000, 1000, true));
    
 }
 
@@ -215,17 +218,21 @@ TEST_CASE("Reads In Full Data", "[.][full]") {
    }
 
    SECTION("Betweenness Centrality on Sub-Graph", "[full][BC]") {
-      Graph subgraph = graph.connected_subgraph(100000, 300, true);
+      Graph subgraph = graph.connected_subgraph(100000, 300);
 
       std::vector<std::pair<int, float>> BC = subgraph.betweenness_centrality(5);
-      for (auto pair : BC) {
-         std::cout << "Product: " << reader[pair.first] << " Node: " << pair.first << ", Centrality: " << pair.second << std::endl;
-      }
+      
       REQUIRE(BC[0].first == 370312);
       REQUIRE(BC[1].first == 506956);
       REQUIRE(BC[2].first == 364286);
       REQUIRE(subgraph.getAdjList().size() == 300);
       REQUIRE(BC.size() == 5);
+   }
+
+   SECTION("BFS on Graph", "[full][BFS]") {
+      std::vector<int> path = graph.BFS(1, 404753);
+      std::vector<int> correct = {1, 346495, 143523, 282951, 246278, 211432, 24849, 205174, 516401, 166838, 329844, 81706, 455139, 450413, 404753};
+      REQUIRE(match_vec(path, correct));
    }
 }
 

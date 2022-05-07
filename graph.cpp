@@ -1,15 +1,11 @@
 #include "graph.h"
 
-
-
-//O(1)
 void Graph::insertVertex(int key) {
     if (adj_list.find(key) == adj_list.end()) {
         adj_list[key] = new Vertex(key);
     }
 }
 
-//O(max(deg(v1), deg(v2))) ~ O(1)
 void Graph::insertEdge(int k1, int k2, int w) {
     if (adj_list.find(k1) != adj_list.end() && adj_list.find(k2) != adj_list.end()) {
         Vertex* v = adj_list[k1];
@@ -20,10 +16,9 @@ void Graph::insertEdge(int k1, int k2, int w) {
         }
         for (auto edge : v->edges) {
             if (edge->v1 == v2 || edge->v2 == v2) {
-                return; // edge already exists
+                return;
             }
         }
-
         Edge* edge = new Edge(adj_list[k1], adj_list[k2], w);
         edge_list.push_back(edge);
         adj_list[k1]->edges.push_front(edge);
@@ -33,12 +28,10 @@ void Graph::insertEdge(int k1, int k2, int w) {
     }
 }
 
-//O(1)
 std::list<Graph::Edge*> Graph::incidentEdges(int key) {
     return adj_list[key]->edges;
 }
 
-//O(max(deg(v1), deg(v2))) ~ O(1)
 bool Graph::areAdjacent(int k1, int k2) {
     if (adj_list.find(k1) != adj_list.end() && adj_list.find(k2) != adj_list.end()) {
         Vertex* v1 = adj_list[k1];
@@ -57,6 +50,9 @@ bool Graph::areAdjacent(int k1, int k2) {
 }
 
 std::vector<int> Graph::BFS(int root, int target) {
+    if (adj_list.find(root) == adj_list.end() || adj_list.find(target) == adj_list.end() ) {
+        throw std::runtime_error("Specified Root or Target ID is not in the dataset. Retry with a valid ID(s).");
+    }
     std::queue<int> q;
     std::unordered_map<int, int> path;
     q.push(root);
@@ -88,8 +84,6 @@ void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& 
                                         std::unordered_map<int, int>& sigma, std::stack<int>& stack){
     std::unordered_map<int,int> dist;
     std::queue<int> q; 
-    // sigma[std::to_string(s) + "_" + std::to_string(s)] = 1;
-    
     for (auto n : adj_list) {
         dist[n.first] = -1;
     }
@@ -116,6 +110,9 @@ void Graph::Brandes_BFS_helper(int s, std::unordered_map<int,std::vector<int>>& 
 }
 
 std::vector<std::pair<int, float>> Graph::betweenness_centrality(int k) {
+    if (k > (int) adj_list.size()) {
+        throw std::runtime_error("Invalid. Betweenness centrality count greater than graph size. Retry with smaller BC #.");
+    }
     std::map<int, float> CB;
     std::unordered_map<int,std::vector<int>> pred;
     std::unordered_map<int, int> sigma;
@@ -132,24 +129,19 @@ std::vector<std::pair<int, float>> Graph::betweenness_centrality(int k) {
             sigma[m.first] = 0;
         }
         sigma[s] = 1;
-        // std::cout << "-------------------" << std::endl;
         Brandes_BFS_helper(s, pred, sigma, stack);
         while(!stack.empty()) {
             int w = stack.top();
             stack.pop();
             
             for (auto v : pred[w]) {
-                // std::cout << delta[v] << " " << v << std::endl;
                 delta[v] = delta[v] + 
                 ((float) sigma[v] / (float) sigma[w]) * (1 + delta[w]);
-                // std::cout << sigma[std::to_string(s) + "_" + std::to_string(v)] / (float) sigma[std::to_string(s) + "_" + std::to_string(w)] << std::endl;
-                
             }
             if (w != s) {
                 CB[w] = CB[w] + delta[w];
             }
         }
-        // sigma.clear();
     }
     std::vector<std::pair<int, float>> results;
     for (auto& n : CB) {
@@ -165,14 +157,12 @@ std::vector<std::pair<int, float>> Graph::betweenness_centrality(int k) {
     return results;
 }
 
-Graph Graph::connected_subgraph(int root, int size, bool write) {
-    
+Graph Graph::connected_subgraph(int root, int size) {
+    if (adj_list.find(root) == adj_list.end()) {
+        throw std::runtime_error("Specified Root ID is not in the dataset. Retry with a valid ID.");
+    }
     std::queue<int> q;
     Graph g;
-    std::ofstream ofs("connected_size_" + std::to_string(size)+".txt"); 
-    if (!write) {
-        ofs.close();
-    }
     std::unordered_map<int, int> visited;
     q.push(root);
     g.insertVertex(root);
@@ -184,21 +174,16 @@ Graph Graph::connected_subgraph(int root, int size, bool write) {
             int neighbor = edge->v1->ID == front ? edge->v2->ID : edge->v1->ID;
             if (visited.find(neighbor) == visited.end()) {
                 q.push(neighbor);
-                
                 g.insertVertex(neighbor);
                 g.insertEdge(front, neighbor, 1);
                 if ((int) g.adj_list.size() == size) {
                     return g;
                 }
-                if (write)
-                    ofs << front << " " << neighbor << "\n";
                 visited[neighbor]++;
                 
             } 
         }
     }
-    if (write) 
-        ofs.close();
     return g;
 }
 
@@ -223,7 +208,7 @@ void Graph::calc_forces(float x, float y) {
         }
         for (auto n : adj_list) {
             Vertex* v = n.second;
-            v->pos = v->pos + v->disp / v->disp.mag();//(v->disp / v->disp.mag()) * std::min(v->disp.mag(), temp);
+            v->pos = v->pos + v->disp / v->disp.mag();
         }
     }
 }
@@ -275,50 +260,48 @@ void Graph::set_dims(int& x, int& y) {
     for (auto n : adj_list) {
         n.second->pos.x = n.second->pos.x - minx + 50;
         n.second->pos.y = n.second->pos.y - miny + 50;
-        
     }
-
     x = maxx - minx + 100;
     y = maxy - miny + 100;
-    // std::cout << minx << " " << miny << std::endl;
 }
 
-void Graph::draw_graph(int x1, int y1, bool ID) {
-    std::ofstream ofs("GraphDrawn_Size" + std::to_string(adj_list.size()) +".svg"); 
+void Graph::draw_graph( std::string loc, int x1, int y1, bool ID) {
+    if (loc != "") {
+        loc = loc + "/";
+    }
+    std::ofstream ofs(loc+"GraphDrawn_Size" + std::to_string(adj_list.size()) +".svg"); 
     int m = 1;
     int x = x1 * m, y = y1 * m;
     init_pos(x, y);
     calc_forces(x, y);
     normalize_bc();
     set_dims(x, y);
-    // std::cout << x << " " << y << std::endl; 
+    float scalex = (float) x / x1;
+    float scaley = (float) y / y1;
     ofs << 
         "<!DOCTYPE svg>\n" <<
         "<svg version=\"1.1\"\n" <<
-        "width=\""<<x<<"\" height=\""<<y<<"\"\n" << 
+        "width=\""<<x1<<"\" height=\""<<y1<<"\"\n" << 
         "xmlns=\"http://www.w3.org/2000/svg\">\n\n";
     for (auto edge : edge_list) {
-        int x1 = (edge->v1->pos.x); //+ x / 2) / m;
-        int y1 = (edge->v1->pos.y); //+ y / 2) / m;
-        int x2 = (edge->v2->pos.x); ///+ x / 2) / m;
-        int y2 = (edge->v2->pos.y); ///+ y / 2) / m;
+        int x1 = (edge->v1->pos.x) / scalex;
+        int y1 = (edge->v1->pos.y) / scaley;
+        int x2 = (edge->v2->pos.x) / scalex;
+        int y2 = (edge->v2->pos.y) / scaley;
         ofs << "<line x1=\"" << x1 <<"\" y1=\""<< y1 <<"\" x2=\""<< x2 <<"\" y2=\""<< y2 <<"\" stroke-width=\"1\" stroke=\"skyblue\"/>\n";
     }
     for (auto v : adj_list) {
         Vertex* v1 = v.second;
-        int x1 = (v1->pos.x); //+ x / 2) / m;
-        int y1 = (v1->pos.y); //+ y / 2) / m;
+        int x1 = (v1->pos.x) / scalex;
+        int y1 = (v1->pos.y) / scaley;
         int r = v1->centrality == -1 ? 7 : v1->centrality;
         if (r <= 3) r = 3;
         ofs << "<circle cx=\""<< x1<<"\" cy=\""<<y1<<"\" r=\""<<r<<"\" fill=\""<< "rgb(" << 0<<", "<< v1->color<<", "<< 0 <<")\"/>\n";
         if (ID && r > 5)
-            ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"red\" stroke-width=\"1px\" font-size=\""<<r<<"\" dy=\".3em\">" << v1->ID << "</text>\n";
+            ofs << "<text x=\""<<x1<<"\" y=\""<<y1<<"\" text-anchor=\"middle\" stroke=\"red\" stroke-width=\"1px\" font-size=\""<<r * 0.8<<"\" dy=\".3em\">" << v1->ID << "</text>\n";
     }
-
-
     ofs << "\n</svg>";
 }
-
 
 //O(V+E)
 Graph::~Graph() {
