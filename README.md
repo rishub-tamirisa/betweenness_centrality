@@ -50,6 +50,7 @@ Run the default test suite by executing `./test` in the command line. <br>
   * ***`[draw]` which tests the `draw_graph` function and outputs to the `test_output` directory***
 * Note: tests on the full dataset are not run by default, use `[full]` to run them. Example usage is `./test [full]`. <br>
   * These tests test data cleaning, betweenness centrality, graph drawing, and BFS on the full dataset as well. 
+  * Default compilation of the tests on the full dataset is ~1min 30s.
 
 Example usage of the default test suite is `./test [graph][insert]`, which would inform the correctness of vertex insertion.
 
