@@ -4,7 +4,7 @@
 
 ## Core Project File Structure
 * docs <br>
-  * test_output<br>
+* test_output<br>
   * GraphDrawn_SizeK.svg <br>
   * GraphDrawn_SizeK+1.svg <br>
   * etc.<br>
