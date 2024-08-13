@@ -1,8 +1,4 @@
-# raunakb2-aparik31-pr16-rishubt2
-# Amazon Product Analysis 
-*309fc45c-e3d6-4289-9f69-65753fd6980c*
-
-## Core Project File Structure
+## File Structure
 * docs <br>
 * test_output<br>
   * GraphDrawn_SizeK.svg <br>
